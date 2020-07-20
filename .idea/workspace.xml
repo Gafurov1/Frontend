@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34e59ef1-2db8-4257-b523-2f0f9e330193" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/project/git.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/git.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/git.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595261818588</updated>
-      <workItem from="1595261820727" duration="3093000" />
+      <workItem from="1595261820727" duration="3586000" />
     </task>
     <servers />
   </component>
