@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Russo+One&display=swap');
+/*block1*/
+
+body{
+    margin: 0;
+
+}
+.head .inner{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+}
+.head{
+    width: 100%;
+    background: #242424;
+}
+.inner{
+    width: 1140px;
+    margin: 0 auto;
+}
+.text{
+    font-family: Open Sans;
+    color:#FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 45%;
+    white-space: nowrap;
+    padding: 17px;
+}
+.email{
+    padding: 12px ;
+}
+.email__text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40%;
+    color: #FFFFFF;
+    padding: 14px ;
+}
+.visa{
+    padding: 11px;
+}
+.mastercard {
+    padding: 9px ;
+}
+/*block2*/
+.head__2{
+    width: 100%;
+}
+.head__2 .inner{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.icon{
+    padding: 15px ;
+}
+.can{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 40%;
+    color: rgba(48, 48, 48, 0.5);
+    padding: 20px;
+    white-space: nowrap;
+}
+.red{
+    width: 211px;
+    height: 50px;
+    background: #FF4545;
+    margin-top: 15px;
+}
+.red p{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50%;
+    color: #FFFFFF;
+    padding: 0 20px 20px 20px;
+    white-space: nowrap;
+}

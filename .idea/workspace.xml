@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="34e59ef1-2db8-4257-b523-2f0f9e330193" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/name.html" beforeDir="false" afterPath="$PROJECT_DIR$/project/name.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/amway/practica2.html" beforeDir="false" afterPath="$PROJECT_DIR$/amway/practica2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -59,6 +59,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Гафуров\Frontend\metal" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -70,6 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595261818588</updated>
       <workItem from="1595261820727" duration="3586000" />
+      <workItem from="1595870975420" duration="3470000" />
     </task>
     <servers />
   </component>
@@ -89,9 +95,17 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1595868669068">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1595868669068" />
     <state x="461" y="164" key="SettingsEditor" timestamp="1595263032772">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595263032772" />
+    <state x="623" y="229" width="672" height="674" key="search.everywhere.popup" timestamp="1595871636763">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="229" width="672" height="674" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595871636763" />
   </component>
 </project>
