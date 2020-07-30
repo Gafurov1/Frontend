@@ -341,10 +341,11 @@ ol{
     margin-top: 50px;
 }
 .sort{
-    background-image: url("image/sort.png");
+    background-image: url("image/sort.svg");
     background-repeat: no-repeat;
     width: 100%;
     height: 328px;
+    margin-bottom: 30px;
 }
 .sort p{
     font-family: Open Sans;
@@ -353,47 +354,126 @@ ol{
     font-size: 30px;
     line-height: 40%;
     color: #FFFFFF;
-    padding: 30px 831px 280px 60px;
+    padding: 30px 831px 280px 70px;
     white-space: nowrap;
 }
-.blocks{
+.my-flex-cont {
     display: flex;
-    padding: 23px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: -305px;
+    margin-left: -10px;
 }
-.arm{
-    flex-basis: 240px;
-    height: 100px;
-    flex-shrink: 0;
-    background: rgba(255, 255, 255, 0.8);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: -300px;
-    margin-left: 70px;
-
-}
-.arm p{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 50%;
-    color: #303030;
-    padding: 30px 33px 44px 40px;
-}
-/*.arm_2{
+.my-flex-box {
+    margin: 27px -55px -5px 75px;
+    flex: 0 1 auto;
     width: 240px;
     height: 100px;
     background: rgba(255, 255, 255, 0.8);
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.25);
-    margin: -280px 0 0 23px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.arm_2 p{
+.my-flex-cont p{
+    width: 174px;
+    height: 11px;
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
     line-height: 50%;
     color: #303030;
-    padding: 30px 33px 44px 88px;
+    padding: 30px 33px 44px 33px;
+}
+.my-flex-box-2{
+    margin: 27px -55px -5px 75px;
+    flex: 0 1 auto;
+    width: 240px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.my-flex-box-2 p{
+    padding: 30px 88px 44px 88px;
+}
+.my-flex-box-3{
+    margin: 27px -55px -5px 75px;
+    flex: 0 1 auto;
+    width: 240px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.my-flex-box-3 p{
+    padding: 30px 10px 44px 9px;
+}
+.pipes{
+    background-image: url("image/pipes.svg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 328px;
+}
+.pipes p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40%;
+    color: #FFFFFF;
+    padding: 30px 831px 280px 70px;
+    white-space: nowrap;
+}
+.pipes_block{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: -305px;
+    margin-left: -10px;
+}
+.pipes_1,.pipes_2,.pipes_3{
+    margin: 27px -55px -5px 75px;
+    flex: 0 1 auto;
+    width: 240px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.pipes_1 p{
+    width: 174px;
+    height: 11px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #303030;
+    padding: 25px 40px 44px 30px;
+    text-align: center;
+}
+.pipes_2 p{
+    width: 174px;
+    height: 11px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #303030;
+    padding: 15px 27px 33px 27px;
+    text-align: center;
+}
+.pipes_3 p{
+    width: 174px;
+    height: 11px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #303030;
+    padding: 1px 27px 33px 27px;
+    text-align: center;
+}
 
-}*/
+
 
