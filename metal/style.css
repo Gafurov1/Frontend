@@ -2,10 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Russo+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 /*block1*/
-
 body{
     margin: 0;
-
 }
 .head .inner{
     display: flex;
@@ -341,7 +339,7 @@ ol{
     margin-top: 50px;
 }
 .sort{
-    background-image: url("image/sort.svg");
+    background-image: url("image/sort.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 328px;
@@ -407,7 +405,7 @@ ol{
     padding: 30px 10px 44px 9px;
 }
 .pipes{
-    background-image: url("image/pipes.svg");
+    background-image: url("image/pipes.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 328px;
@@ -475,7 +473,7 @@ ol{
     text-align: center;
 }
 .list{
-    background-image: url("image/3block.svg");
+    background-image: url("image/list.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 328px;
@@ -695,8 +693,7 @@ ol{
     justify-content: space-between;
 }
 .p1 img{
-    width: 340px;
-    height: 45px;
+    margin-top: 94px;
 }
 .title_6{
     font-family: Russo One;
@@ -715,4 +712,242 @@ ol{
     font-size: 24px;
     line-height: 100%;
     color: #303030;
+    margin-top: 10px;
+}
+.p1 .date{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40%;
+    color: rgba(48, 48, 48, 0.6);
+}
+.p1 .watch{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40%;
+    color: rgba(48, 48, 48, 0.6);
+    margin-top: 40px;
+}
+.line_grey{
+    width: 93px;
+    height: 2px;
+    background: rgba(48, 48, 48, 0.6);
+}
+.title_7{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 100%;
+    color: #303030;
+    margin: 120px 0 0 52px;
+}
+.left{
+    margin-top:120px;
+}
+.left p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #303030;
+    margin: -40px 0 0 100px;
+}
+.mail_text p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 60%;
+    color: #303030;
+    margin-top: -22px;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left img{
+    margin: 50px 0 0 48px;
+}
+.social_network{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    color: #303030;
+    margin: 40px 0 0 52px;
+
+}
+.social_img{
+    display: flex;
+    margin:10px 0 0 -10px ;
+}
+.social_img img{
+    padding: 10px;
+}
+.right{
+    margin: -470px 0 0 500px;
+}
+.back img{
+    margin: 46px 0 0 0;
+}
+.price_8{
+    width: 101px;
+    height: 50px;
+    background: #FF4545;
+}
+.price_8 p{
+    font-family: Russo One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 50%;
+    color: #FFFFFF;
+    padding: 20px 20px 20px 20px;
+}
+.back{
+    width: 100%;
+    height: 425px;
+    background: #C4C4C4;
+    margin-top: 120px;
+}
+.catalog_8{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    color: #FF4545;
+    margin-top: 60px;
+}
+.catalog_8 p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: left;
+    color: #303030;
+}
+.text_8{
+    margin-top: 30px;
+}
+.asd{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    width: 272px;
+    height: 191px;
+    background: #C4C4C4;
+    border: 3px solid #FF4545;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+.form-text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 100%;
+    color: #303030;
+    padding: 20px 20px 0 20px;
+    white-space: nowrap;
+}
+.form_fill{
+    width: 222px;
+    height: 20px;
+    background: #FFFFFF;
+    margin: 10px 30px 0 20px;
+}
+.form_fill p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30%;
+    color: rgba(0, 0, 0, 0.4);
+    padding: 7px 0 6px 6px;
+}
+.f_text{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30%;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 10px 132px 0 21px;
+    white-space: nowrap;
+}
+input{
+    margin: 15px 0 0 20px;
+}
+.check{
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    margin: 10px 4px 0 20px;
+}
+.check p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 50%;
+    color: #303030;
+    white-space: nowrap;
+    padding: 3px 0 0 14px;
+}
+.but_form{
+    width: 140px;
+    height: 30px;
+    background: #FF4545;
+    margin: 20px 113px 20px 19px;
+}
+.but_form p{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 70%;
+    color: #FFFFFF;
+    padding: 10px 15px 10px 16px;
+}
+.black{
+    width: 100%;
+    height: 60px;
+    background: #242424;
+}
+.text_footer{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 30%;
+    color: #FFFFFF;
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_img  {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -10px;
+}
+.pay{
+    margin:-30px 27px 0 0;
+}
+.shield_red{
+    margin:-10px 0 35px 40px;
+}
+.money{
+    margin: -10px 0 35px 0;
 }
