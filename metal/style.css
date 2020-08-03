@@ -274,12 +274,8 @@ body{
     border-radius: 50px;
     margin: 5px;
 }
-.circle_red{
-    width: 10px;
-    height: 10.04px;
-    background: #FF4545;
-    border-radius: 50px;
-    margin: 5px;
+.circle--red{
+      background: #FF4545;
 }
 .pick{
     width: 1150px;
@@ -640,7 +636,7 @@ ol{
     height: 640px;
     margin: 120px 0 0 293px;
     background-repeat: no-repeat;
-}
+   }
 .shield{
     font-family: Russo One;
     font-style: normal;
@@ -862,12 +858,6 @@ ol{
     padding: 20px 20px 0 20px;
     white-space: nowrap;
 }
-.form_fill{
-    width: 222px;
-    height: 20px;
-    background: #FFFFFF;
-    margin: 10px 30px 0 20px;
-}
 .form_fill p{
     font-family: Open Sans;
     font-style: normal;
@@ -884,18 +874,13 @@ ol{
     font-size: 12px;
     line-height: 30%;
     color: rgba(0, 0, 0, 0.6);
-    padding: 10px 132px 0 21px;
+    padding: 1px 132px 0 21px;
     white-space: nowrap;
 }
 input{
     margin: 15px 0 0 20px;
 }
-.check{
-    width: 10px;
-    height: 10px;
-    background: #FFFFFF;
-    margin: 10px 4px 0 20px;
-}
+
 .check p{
     font-family: Open Sans;
     font-style: normal;
@@ -904,13 +889,13 @@ input{
     line-height: 50%;
     color: #303030;
     white-space: nowrap;
-    padding: 3px 0 0 14px;
+    margin: -13px 0 30px 40px;
 }
 .but_form{
     width: 140px;
     height: 30px;
     background: #FF4545;
-    margin: 20px 113px 20px 19px;
+    margin: -15px 113px 20px 19px;
 }
 .but_form p{
     font-family: Open Sans;
@@ -950,4 +935,16 @@ input{
 }
 .money{
     margin: -10px 0 35px 0;
+}
+a:hover {
+    background: red;
+}
+a{
+    text-decoration: none;
+}
+.text_8 a{
+    color: #FFFFFF;
+}
+.form_2{
+    margin: -33px 0 0 3px;
 }
