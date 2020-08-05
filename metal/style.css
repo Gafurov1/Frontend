@@ -70,6 +70,9 @@ body{
     display: flex;
     margin-left: 62px;
 }
+.info a{
+    color: rgba(48, 48, 48, 0.5);
+}
 .can{
     font-family: Open Sans;
     font-style: normal;
@@ -98,6 +101,9 @@ body{
     padding: 0 20px 20px 20px   ;
     white-space: nowrap;
 }
+.red a{
+    color: #FFFFFF;
+}
 .lin{
     width: 1170px;
     height: 3px;
@@ -124,6 +130,9 @@ body{
     color: #FFFFFF;
     padding: 0 20px 20px 20px;
 }
+.price a{
+    color: #FFFFFF;
+}
 .price_2{
     width: 211px;
     height: 50px;
@@ -141,6 +150,9 @@ body{
     padding: 0 19px 18px 18px;
     white-space: nowrap;
 }
+.price_2 a{
+    color: #FF4545;
+}
 .price_3{
     width: 211px;
     height: 50px;
@@ -148,7 +160,7 @@ body{
     box-sizing: border-box;
     margin: 15px 0 0 40px;
 }
-.price_3 p{
+.price_3 p {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
@@ -158,6 +170,9 @@ body{
     padding: 0 19px 18px 18px;
     white-space: nowrap;
 }
+.price_3 a{
+    color: #FF4545;
+}
 .price_4{
     width: 211px;
     height: 50px;
@@ -165,7 +180,7 @@ body{
     box-sizing: border-box;
     margin: 15px 0 15px  40px;
 }
-.price_4 p{
+.price_4 p {
     font-family: Russo One;
     font-style: normal;
     font-weight: normal;
@@ -174,6 +189,9 @@ body{
     color: #FF4545;
     padding: 0  19px 18px 20px;
     white-space: nowrap;
+}
+.price_4 a{
+    color: #FF4545;
 }
 .phone{
     margin: 29px 0 0 37px;
@@ -213,7 +231,7 @@ body{
     color: #FFFFFF;
     padding: 60px 470px 258px 68px;
 }
-.catalog{
+.catalog {
     width: 195px;
     height: 70.28px;
     background: #FF4545;
@@ -228,6 +246,9 @@ body{
     line-height: 50%;
     color: #FFFFFF;
     padding: 29px 47px 28px 46px;
+}
+.catalog a{
+    color: #FFFFFF;
 }
 .arrow_left{
     padding: 90px 0 0 70px;
@@ -341,7 +362,7 @@ ol{
     height: 328px;
     margin-bottom: 30px;
 }
-.sort p{
+.sort p {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
@@ -350,6 +371,9 @@ ol{
     color: #FFFFFF;
     padding: 30px 831px 280px 70px;
     white-space: nowrap;
+}
+.sort a{
+    color: #303030;
 }
 .my-flex-cont {
     display: flex;
@@ -416,6 +440,9 @@ ol{
     padding: 30px 831px 280px 70px;
     white-space: nowrap;
 }
+.pipes a{
+    color: #303030;
+}
 .pipes_block{
     display: flex;
     flex-flow: row wrap;
@@ -474,6 +501,9 @@ ol{
     width: 100%;
     height: 328px;
     margin-top: 30px;
+}
+.list a{
+    color: #303030;
 }
 .list p{
     font-family: Open Sans;
@@ -585,6 +615,12 @@ ol{
     line-height: 100%;
     color: #FFFFFF;
     padding: 23px;
+}
+.fast_price a{
+    color: #FFFFFF;
+}
+.fast_price_2 a{
+    color: #FFFFFF;
 }
 .fast_block{
     display: flex;
@@ -727,6 +763,9 @@ ol{
     color: rgba(48, 48, 48, 0.6);
     margin-top: 40px;
 }
+.watch a{
+    color: rgba(48, 48, 48, 0.6);
+}
 .line_grey{
     width: 93px;
     height: 2px;
@@ -808,6 +847,9 @@ ol{
     color: #FFFFFF;
     padding: 20px 20px 20px 20px;
 }
+.price_8 a{
+    color: #FFFFFF;
+}
 .back{
     width: 100%;
     height: 425px;
@@ -833,7 +875,7 @@ ol{
     text-align: left;
     color: #303030;
 }
-.text_8{
+.text_8 a{
     margin-top: 30px;
 }
 .asd{
@@ -874,7 +916,7 @@ ol{
     font-size: 12px;
     line-height: 30%;
     color: rgba(0, 0, 0, 0.6);
-    padding: 1px 132px 0 21px;
+    padding: 10px 132px 0 21px;
     white-space: nowrap;
 }
 input{
@@ -906,6 +948,9 @@ input{
     color: #FFFFFF;
     padding: 10px 15px 10px 16px;
 }
+.but_form a{
+    color: #FFFFFF;
+}
 .black{
     width: 100%;
     height: 60px;
@@ -928,7 +973,7 @@ input{
     margin-top: -10px;
 }
 .pay{
-    margin:-30px 27px 0 0;
+    margin:-30px 10px 0 0;
 }
 .shield_red{
     margin:-10px 0 35px 40px;
@@ -936,15 +981,40 @@ input{
 .money{
     margin: -10px 0 35px 0;
 }
-a:hover {
-    background: red;
+a:hover  {
+    background: gray;
+    text-decoration: none;
 }
 a{
     text-decoration: none;
 }
 .text_8 a{
-    color: #FFFFFF;
+    color: #303030;
 }
 .form_2{
     margin: -33px 0 0 3px;
+}
+.link_1:hover{
+    background: none;
+}
+.end_text{
+    display: flex;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 70%;
+    color: #FFFFFF;
+    margin-right: 220px;
+}
+.end_text p{
+    padding-left: 20px;
+}
+h6{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 70%;
+    color: #303030;
 }
