@@ -329,7 +329,7 @@ h2{
     justify-content: center;
 }
 .new-amway__item {
-    font-family: Source Sans Pro;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
@@ -399,6 +399,15 @@ h2{
     border-radius: 10px;
     margin-top: 24px;
     width: 236px;
+}
+.sub{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 120.7%;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 .marine__icon{
     max-width: 48px;
