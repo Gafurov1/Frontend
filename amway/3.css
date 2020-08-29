@@ -512,6 +512,10 @@ h2{
     border-radius: 10px;
 }
 @media screen and (max-width: 379px){
+    .body{
+        width: 100%;
+        overflow: hidden;
+    }
     .inner{
         flex-direction: column;
         width: 100%;
@@ -691,9 +695,6 @@ h2{
         word-wrap: normal;
         width: 110px;
     }
-    /*.title--right{
-        color: rgba(255, 255, 255, 0.5);
-    }*/
     .new-amway__item--n4,.new-amway__item--n5,.new-amway__item--n6{
         display: none;
     }
@@ -738,16 +739,17 @@ h2{
         width: 315px;
     }
     .inner__block5{
-        background-size: 376.26px 320.06px;
+        background-size: 376px 320px;
         margin-top: 16px;
         background-image: url("image/adaptive_phone.png");
-        width: 379px;
+        width: 376px;
     }
     .caption{
         font-size: 18px;
         line-height: 23px;
         padding-top: 100px;
         margin-left: 30px;
+        width: 266px;
     }
     .title__end{
         font-family: Source Sans Pro;
@@ -760,5 +762,11 @@ h2{
         margin-left: 30px;
         font-size: 14px;
         line-height: 18px;
+    }
+    .block5{
+        max-width: 100%;
+    }
+    .block__right{
+        width: 378px;
     }
 }
