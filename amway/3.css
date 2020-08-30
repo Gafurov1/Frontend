@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
+
 .inner__block5{
     background-image: url(image/phonewith.svg);
     background-repeat: no-repeat;
@@ -512,16 +513,12 @@ h2{
     border-radius: 10px;
 }
 @media screen and (max-width: 379px){
-    .body{
-        width: 100%;
-        overflow: hidden;
-    }
     .inner{
         flex-direction: column;
         width: 100%;
     }
     main{
-        height: 4151px;
+        height: 626px;
     }
     .head{
         width: 379px;
@@ -743,6 +740,7 @@ h2{
         margin-top: 16px;
         background-image: url("image/adaptive_phone.png");
         width: 376px;
+        height: 550px;
     }
     .caption{
         font-size: 18px;
@@ -765,8 +763,298 @@ h2{
     }
     .block5{
         max-width: 100%;
+
     }
     .block__right{
         width: 378px;
+        height: 550px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 380px){
+    .inner {
+        flex-direction: column;
+        width: 100%;
+    }
+    .head {
+        width: 768px;
+        height: 789px;
+    }
+    .pin {
+        width: 337px;
+        margin-left: 60px;
+        margin-top: 60px;
+        display: flex;
+        white-space: nowrap;
+        font-size: 80px;
+        line-height: 94px;
+    }
+    .pin img {
+        width: 82px;
+        height: 82px;
+        margin-left: 45px;
+    }
+
+    .title {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 116.7%;
+        color: #FFFFFF;
+        margin-left: 61px;
+        margin-top: 29px;
+    }
+
+    .download {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 60px;
+        margin-top: 50px;
+    }
+
+    .app img {
+        width: 119px;
+        height: 40px;
+        margin-left: -15px;
+    }
+
+    .google img {
+        width: 135px;
+        height: 40px;
+    }
+
+    .phone img {
+        width: 395px;
+        height: 370px;
+        margin-top: -31px;
+        margin-left: 206px;
+    }
+    .block2{
+        width: 768px;
+        height: 990px;
+    }
+    h2{
+        font-size: 56px;
+        line-height: 66px;
+        margin-left: 174px;
+        margin-top: 45px;
+    }
+    .title__black{
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        margin-left: 120px;
+        margin-top: 35px;
+        width: 474px;
+        height: 91px;
+    }
+    .title__black br{
+        display: none;
+    }
+    .picture1 img{
+        width: 239px;
+        height: 210.49px;
+        margin-left: -55px;
+        margin-top: -30px;
+    }
+    .picture_1__text{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: -10px;
+        margin-top: -30px;
+    }
+    .text__picture2{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 200px;
+        margin-top: 3px;
+    }
+    .picture2 img{
+        width: 215px;
+        height: 205.24px;
+        margin-left: 20px;
+    }
+    .picture3 img{
+        width: 238px;
+        height: 211.47px;
+        margin-top: 60px;
+        margin-left: -50px;
+    }
+    .text__picture3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 60px;
+        margin-left: -10px;
+    }
+    .download__black{
+        position: absolute;
+        margin-top: 640px;
+        margin-left: 201px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .app_black img{
+        width: 119.66px;
+        height: 40px;
+        margin-left: -15px;
+    }
+    .google__black img{
+        width: 135px;
+        height: 40px;
+        margin-right: 30px;
+    }
+    .block3{
+        width: 768px;
+        height: 945px;
+    }
+    .title_block2{
+        font-size: 56px;
+        line-height: 66px;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .sub-title{
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120.7%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-left: 62px;
+    }
+    .sub{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120.7%;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-right: -30px;
+    }
+    .block__center img{
+        margin-left: 440px;
+        margin-top: 207px;
+        margin-right: 48px;
+        width: 280px;
+        height: 551.09px;
+        background-image: url("image/adaptif_phone_2.png");
+        background-repeat: no-repeat;
+    }
+    .new-amway__item {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+        margin-left: 30px;
+        margin-bottom: 33px;
+    }
+    .item--1{
+        padding: 13px 8px 21px 30px;
+        white-space: nowrap;
+        width: 203px;
+        margin-top: 115px;
+    }
+    .new-amway__item--n2{
+        margin-top: 70px;
+        padding: 15px 17px 19px 30px;
+        white-space: normal;
+        width: 348px;
+        word-wrap: normal;
+    }
+    .item--3{
+        padding: 17px 6px 17px 30px;
+        word-wrap: normal;
+        width: 212px;
+        margin-top: 70px;
+    }
+    .new-amway__item--n4,.new-amway__item--n5,.new-amway__item--n6{
+        display: none;
+    }
+    .block4{
+        width: 768px;
+        height: 864px;
+    }
+    .title3{
+        font-family: Roboto Condensed;
+        font-size: 56px;
+        line-height: 66px;
+        margin-top: 45px;
+        margin-left: 31px;
+        text-align: center;
+    }
+    .text{
+        font-size: 24px;
+        line-height: 130%;
+        text-align: center;
+        width: 586px;
+        height: 63px;
+    }
+    .block4__center img{
+        overflow: visible;
+        width: 277px;
+        height: 483px;
+        margin-left: 62px;
+        filter: drop-shadow(0px 3.99258px 49.9072px rgba(0, 0, 0, 0.1));
+        margin-top: 50px ;
+    }
+    .block4__right{
+        margin-left: 412px;
+        margin-top: -550px;
+        width: 293px;
+    }
+    .feature--green{
+        width: 236px;
+        height: 67px;
+    }
+    .marine{
+        width: 236px;
+        height: 78px;
+    }
+    .pink{
+        width: 195px;
+        height: 70px;
+    }
+    .indigo{
+        width: 254px;
+        height: 70px;
+    }
+    .yellow{
+        width: 293px;
+        height: 70px;
+    }
+    .inner__block5{
+        background-size: 376px 320px;
+        background-image: url("image/adaptive_phone.png");
+        width: 376px;
+        height: 550px;
+    }
+    .caption{
+        font-size: 24px;
+        line-height: 30px;
+        padding-top: 100px;
+        width: 266px;
+    }
+    .title__end{
+        font-family: Source Sans Pro;
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 22px;
+    }
+    .download__end{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .block5{
+        max-width: 768px;
+
+    }
+    .block__right{
+        width: 768px;
+        height: 600px;
     }
 }
