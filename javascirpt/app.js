@@ -37,7 +37,7 @@ alert(result);*/
 let a = prompt("Укажите объем флешки в ГБ");
 let message ="Количество файлов";
 alert((message+Math.floor((a*1024)/820)));*/
-const dollar = 74.97;
+/*const dollar = 74.97;
 const rub =0.013;
 let nameValue = prompt("Название валюты для обмена");
 prompt("На какую валюту")
@@ -46,8 +46,139 @@ if (nameValue === "рубли"){
 }
  else if (nameValue === "доллар"){
     prompt("сумма которую хотите обменять")
+}*/
+/* let month = prompt("Введите номер месяца")
+switch (month){
+    case '1':
+        alert("Январь")
+        break;
+    case '2':
+        alert("Февравль")
+        break;
+    case '3':
+        alert("Март")
+        break;
+    case '4':
+        alert("Апрель")
+        break;
+    case '5':
+        alert("Май")
+        break;
+    case '6':
+        alert("Июнь")
+        break
+    case '7':
+        alert("Июль")
+        break;
+    case '8':
+        alert("Август")
+        break;
+    case '9':
+        alert("Сентябрь")
+        break ;
+    case'10':
+        alert("Октябрь")
+        break ;
+    case '11':
+        alert("Ноябрь")
+        break;
+    case '12':
+        alert("Декабрь")
+        break;
+    default:
+        alert("Неверно введен месяц")
 }
-
-
-
-
+*/
+/*let x1 = prompt("Введите число один ")
+x1 = parseInt(x1);
+let x2 = prompt("Введите число два")
+x2 = parseInt(x2);
+let operator = prompt( "Введите оператор (-,+,/)")
+switch (operator){
+    case'+':
+        alert('Результат ' + (x1 + x2));
+        break;
+        case'-':
+        alert('Результат ' + (x1 + x2));
+        break;
+        case'*':
+        alert('Результат ' + (x1 * x2));
+        break;
+        case'/':
+            if(x2 == 0){
+                alert('Делить на 0 нельзя');
+            }else {
+                alert('Результат ' + (x1 / x2));
+            }
+        break;
+    default:
+        alert('Неищвестный оператор');
+}*/
+/*let x = parseInt(prompt("Введите число"));
+while (x>0){
+    document.write('#<br>');
+    x--;
+}*/
+/*
+let x = parseInt(prompt("Введите число"));
+while (x>=0){
+    document.write(x + '<br>');
+    x--;
+}
+*/
+/*let x = parseInt(prompt("Введите число"));
+let y = parseInt(prompt("Введите степень"));
+let z = y
+let result = 1;
+while (y > 0){
+    result = result * x;
+    y--;
+}
+document.write('Число '  + x + ' в степени ' + z + '=' + result);*/
+/*let x = parseInt(prompt('Введите число'));
+let y = parseInt(prompt('Введите число 2'));
+let min = (x>y)? y: x;
+min --;
+while (min >1){
+    if ((x % min)==0 && (y % min)==0){
+        document.write('Делитель ' + min + '<br>');
+    }
+    min--;
+}*/
+/*let x = parseInt(prompt('Введите число'));
+let result = 1;
+let number = x
+while (x > 0 ){
+    result = result * x;
+    x--;
+}
+document.write('Факториал числа ' + number + ' равен ' + result);*/
+/*let x = 0
+do {
+    x = prompt('Решите пример 2 + 2 * 2 =');
+} while (x != 6);
+document.write('Поздравляю! ');*/
+/*let x = 1000;
+let y = 2;
+let count = 0;
+do {
+    x = x/2;
+    count ++;
+}while (x >= 50);
+document.write('Число: ' + x + ' делений: ' + count);*/
+/*
+let x =parseInt(prompt('Введите число'));
+for (let i = 1; i <= 100;i++){
+    if((i % x)== 0 && i != x){
+        document.write(i +'<br>');
+    }
+}*/
+let x =parseInt(prompt('Введите число'));
+let y =parseInt(prompt('Диапозон'))
+let counter = 1;
+for (let i=x; i <=y; i++){
+    if ((counter % 4) == 0){
+        document.write(i + '<br>');
+    }
+    counter++;
+}
