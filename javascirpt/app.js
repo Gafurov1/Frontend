@@ -173,6 +173,7 @@ for (let i = 1; i <= 100;i++){
         document.write(i +'<br>');
     }
 }*/
+/*
 let x =parseInt(prompt('Введите число'));
 let y =parseInt(prompt('Диапозон'))
 let counter = 1;
@@ -182,3 +183,119 @@ for (let i=x; i <=y; i++){
     }
     counter++;
 }
+*/
+/*
+function show5Blocks()
+{
+    for (let i = 1;i<=5;i++){
+        document.write('<h2> Header' + i + '</h2>');
+    }
+}
+ show5Blocks();*/
+/*
+function incAndLog(x){
+    x=x+1;
+    alert("inc x= " + x);
+    Log.innerHTML += "<br>inc x = " + x;
+}
+incAndLog(5);*/
+/*function min(a,b){
+    if(a >b){
+        return b;
+    }else {
+        return a;
+    }
+}
+alert(min(90,4));*/
+/*
+function power(x,y){
+    let result=1;
+        while (y >=1){
+            result = result * x;
+            y--;
+        }
+        return result;
+}
+alert(power(2,9));*/
+/*function calc(a,b, operator){
+    switch (operator){
+        case '+':
+            return a + b;
+        case '-':
+            return a-b;
+        case '*':
+            return a*b;
+        case '/':
+            return a/b;
+    }
+}
+alert(calc(10,15, '+'));
+alert(calc(10,15, '-'));
+alert(calc(10,15, '/'));
+alert(calc(10,15, '*'));*/
+/*function number(a){
+    for( let i = a-1; i>1;i--){
+        if((a % i) == 0){
+            return 'Число не простое'
+        }
+    }
+    return 'Число простое'
+}
+alert(number(19));*/
+/*
+function table(x){
+    for(let i=1;i<=10;i++){
+        document.write(x + ' * ' + i + ' = ' + x * i +'<br>');
+    }
+    document.write('<hr>');
+}
+for(let i = 2;i<= 9;i++){
+    table(i);
+}*/
+/*
+function rest(a,b){
+    let div = parseInt(a/b);
+    return a - b * div;
+}
+alert(rest(5,2));
+alert(rest(15,3));
+alert(rest(37,8));*/
+/*function  summ(){
+    let result = 0;
+    for (let i = 0;i< arguments.length;i++){
+        if(i>4){
+            break;
+        }
+        result += arguments[i];
+    }
+    return result;
+}
+alert(summ(10,13,12,765,700));*/
+/*
+function max(){
+    let max = arguments[0];
+    for (let i = 0;i< arguments.length;i++){
+        if(arguments[i] > max && i<4){
+            max = arguments[i];
+        }
+    }
+    return max;
+}
+alert(max(70,50,40,30,22));
+*/
+
+function showNumber(a,b,even) {
+    for (let i = a; i <= b; i++) {
+        if (even) {
+            if ((i % 2) == 0) {
+                document.write(i + '<br>');
+            } else {
+                if ((i % 2) != 0) {
+                    document.write(i + '<br>');
+                }
+            }
+        }
+    }
+}
+showNumber(5,50,true);
+document.write('<hr>');
