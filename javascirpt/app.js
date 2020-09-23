@@ -302,7 +302,7 @@ document.write('<hr>');*/
 function  getNextDate(day,month,year){
     let maxDay = 30;
     if(month == 2){
-        maxDay =28;
+        maxDay =isLeapYear(year) ? 29 :28;
     }else if(month = 1 || month ==3 || month == 5 ||month ==7 ||month== 8 || month ==10 || mounth == 12){
         maxDay=31;
     }
@@ -325,3 +325,4 @@ function  getNextDate(day,month,year){
 function  isLeapYear(year){
     return((year %400) == 0 ||((year % 4) == 0 &&(year %100) !== 0));
 }
+alert(getNextDate(23, 9, 2020));
