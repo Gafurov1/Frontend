@@ -284,7 +284,7 @@ function max(){
 alert(max(70,50,40,30,22));
 */
 
-function showNumber(a,b,even) {
+/*function showNumber(a,b,even) {
     for (let i = a; i <= b; i++) {
         if (even) {
             if ((i % 2) == 0) {
@@ -298,4 +298,30 @@ function showNumber(a,b,even) {
     }
 }
 showNumber(5,50,true);
-document.write('<hr>');
+document.write('<hr>');*/
+function  getNextDate(day,month,year){
+    let maxDay = 30;
+    if(month == 2){
+        maxDay =28;
+    }else if(month = 1 || month ==3 || month == 5 ||month ==7 ||month== 8 || month ==10 || mounth == 12){
+        maxDay=31;
+    }
+    if(day == maxDay){
+        day = 1;
+        if(month == 12){
+            month =1;
+            year++;
+        }else {
+            month++;
+        }
+    }else {
+        day++;
+    }
+    if(day < 10){
+        month = '0' + month;
+    }
+    return day + '.' + month + '.' + year;
+}
+function  isLeapYear(year){
+    return((year %400) == 0 ||((year % 4) == 0 &&(year %100) !== 0));
+}
