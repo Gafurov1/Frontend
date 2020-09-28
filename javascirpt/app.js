@@ -299,6 +299,7 @@ alert(max(70,50,40,30,22));
 }
 showNumber(5,50,true);
 document.write('<hr>');*/
+/*
 function  getNextDate(day,month,year){
     let maxDay = 30;
     if(month == 2){
@@ -326,3 +327,108 @@ function  isLeapYear(year){
     return((year %400) == 0 ||((year % 4) == 0 &&(year %100) !== 0));
 }
 alert(getNextDate(23, 9, 2020));
+*/
+/*
+let x =10;
+function func(){
+    x = x + 100;
+}
+func(x);
+alert(x);
+*/
+//1) Написать функцию, которвя вычисляет факториал заданного числа;
+/*function factorial(x){
+    if(x==2){
+        return x;
+    };
+    return factorial(x-1)*x;
+}
+alert(factorial(5));*/
+// Написать фунцию,коттторая выводит все числа заданнгого пользователем диапозона в прямом порядке.И еще одну
+// функцию - для вывода в обратном порядке
+/*let x= parseInt(prompt("Введите число 1"));
+let y = parseInt(prompt("Введите число 2"));*/
+/*function  showNumbers(x,y){
+    document.write(x + "<br>");
+    if (x <= y){
+        showNumbers(x+1,y);
+    }
+}*/
+//showNumbers(x,y);
+
+
+/*function  showNumbers2(x,y) {
+    document.write(x + "<br>");
+    if (y => x) {
+        document.write(y + '<br>');
+        showNumbers2(x,  -1);
+    }
+}
+showNumbers2(x,y);*/
+
+//Написать функцию которая выводит переданное ей число задом наперед
+
+/*function  reverse(x){
+    let rest = x%10;
+    document.write(rest);
+
+    let newnumber =((x -rest)/10);
+    if(newnumber >9){
+        reverse((x -rest)/10);
+    }else {
+        document.write(newnumber);
+    }
+}
+reverse(12345678);*/
+// Написать функцию которая считает суцмму цифр числа.
+/*
+function summ(x){
+    let rest =x %10;
+    let newnumber = (x-rest)/10;
+    if(newnumber > 9){
+        document.write(rest + ' + ');
+        return rest + summ(newnumber);
+    }else {
+        document.write(rest + ' + ' + newnumber + ' = ' + rest + newnumber);
+        return  rest + newnumber;
+    }
+}
+alert(summ(135791));
+*/
+//Написать фунцию  которая принимает число и выводит соответствуещие количество вложенных пар круглых скобок.
+function showHooks(x){
+    if(x ==1){
+        return '()';
+    }else {
+        return '(' + showHooks(x-1) + ')';
+    }
+}
+document.write(showHooks(100));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
