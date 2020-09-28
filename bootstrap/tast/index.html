@@ -14,14 +14,13 @@
             <div class="info_v">
                 <div class="col pb-5">
                     <div class="info">контактная информация</div>
-                </div>
-                <div class="col pb-5 ">
+                    <div class="info_line"></div>
                 </div>
                 <div class="icon">
-                    <div class="col pb-4 pt-5"><img src="image/instagramm.svg"></div>
-                    <div class="col"><img src="image/facebook.svg"></div>
-                    <div class="col pt-4"><img src="image/vk.svg"></div>
-                    <div class="col pt-4"><img src="image/youtube.svg"></div>
+                    <div class="insta"></div>
+                    <div class="facebook"></div>
+                    <div class="vk"></div>
+                    <div class="youtube"></div>
                 </div>
             </div>
         </div>
@@ -29,14 +28,16 @@
 </div>
 <section class="head">
     <div class="container">
-        <div class="row">
-            <div class="col mr-1"><p><a href="">Главная</a></p></div>
-            <div class="col mr-1"><p><a href="">о театре</a></p></div>
-            <div class="col mr-2"><p><a href="">Наши постановки</a></p></div>
-            <div class="col mr-3"><p><a href="">партнеры театра</a></p></div>
-            <div class="col mr-5"><p><a href="">контакты</a></p></div>
+        <div class="row ">
+            <div class="cols-sm-12 col-lg-12 col-xl-9 d-none d-sm-none d-md-none d-lg-flex d-xl-flex navigation justify-content-between">
+            <div class="col-2"><p><a href="">Главная</a></p></div>
+            <div class="col-2"><p><a href="">о театре</a></p></div>
+            <div class="col-3"><p><a href="">Наши постановки</a></p></div>
+            <div class="col-3"><p><a href="">партнеры театра</a></p></div>
+            <div class="col"><p><a href="">контакты</a></p></div>
+            </div>
             <div class="row">
-                <div class="col number"><p>+7 495 123-45-67</p></div>
+                <div class=" number_head"><p>+7 495 123-45-67</p></div>
             </div>
         </div>
         <div class="d-flex flex-column">
@@ -54,13 +55,12 @@
                 <div class="film"><img src="image/film.png"></div>
             </div>
         </div>
-        <div class="d-flex flex-row">
-            <div class="col"></div>
-            <div class="arrow"></div>
-            <div class="arrow_text">ПРЕД</div>
-            <div class="arrow_right"></div>
-            <div class="arrow_text">СЛЕД</div>
+        <div class="arrow d-flex flex-row">
+            <div class="col "></div>
+            <div class="arrow-left">ПЕРЕД</div>
+            <div class="arrow-right">СЛЕД</div>
         </div>
+    </div>
 </section>
 <section class="center">
     <div class="container">
@@ -105,8 +105,6 @@
     </div>
 </section>
 <section class="content">
-        <div class="row">
-            <div class="col">
                 <div class="photo d-flex">
                     <div><img src="image/oscar.png"></div>
                     <div><img src="image/arka.png"></div>
@@ -139,7 +137,7 @@
             <div class="col">
                 <div class="title_center"><span>партнеры</span> театра </div>
             </div>
-    </div>
+     </div>
         <div class="d-flex flex-row">
             <div class="gaz row">
             <div class="logo"><img src="image/logo.png"></div>
@@ -161,8 +159,7 @@
                 <div class="title_center"><span>стать</span> меценатом</div>
             </div>
         </div>
-        <div class="d-flex flex-column">
-            <div class="row">
+        <div class="d-flex flex-row bd-highlight mb-3" >
                 <div class="col">
                     <div class="footer">
                         <div class="number">+7 (812) 123-45-55</div>
@@ -171,25 +168,33 @@
                         <div class="number">г. санкт-петербург, невский 140</div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer_input_1">
-                        <div class="footer_text"><input class="footer_form" placeholder="Введите ваш e-mail"></p></div>
-                        <div class="footer_text"><input class="footer_form" placeholder="Телефон"></p></div>
+            <div class="col">
+                <div class="footer_input_1">
+                    <div class="footer_text"><input class="footer_form" placeholder="Введите ваш e-mail"></p></div>
+                    <div class="footer_text"><input class="footer_form" placeholder="Телефон"></p></div>
+                    <div class="sub_footer">* Ваши данные не будут переданы третьим лицам, 100%<br> вероятность.
+                        Конфиденциальность мы гарантируем, и защищаем<br> персональные данные согласно законку ФЗ-52.
                     </div>
                 </div>
-                <div class="col">
-                    <div class="footer_input_2">
-                        <div class="footer_text"><input class="footer_form" placeholder="Компания"></p></div>
-                        <div class="footer_text"><input class="footer_form" placeholder="E-mail"></p></div>
-                    </div>
+            </div>
+            <div class="col">
+                <div class="footer_input_2">
+                    <div class="footer_text"><input class="footer_form" placeholder="Компания"></p></div>
+                    <div class="footer_text"><input class="footer_form" placeholder="E-mail"></p></div>
                 </div>
-                <div class="col">
-                    <div class="footer_text"><input class="messenge" placeholder="Сообщение "></p></div>
-                    <div class="buttom_footer"><a href="">ОТПРАВИТЬ</a></div>
-                </div>
-                <div class="line"></div>
+            </div>
+            <div class="col">
+                <div class="massenge_text"><input class="messenge" placeholder="Сообщение "></p></div>
+                <div class="buttom_footer"><a href="">ОТПРАВИТЬ</a></div>
             </div>
         </div>
+        <div class="line"></div>
+        <div class="guard">(с) Все права защищены. Большой театр. 2020</div>
+        <div class="developer">Разработано d-e-n.ru</div>
+    </div>
+    </div>
+    </div>
+    </div>
 </section>
 </body>
 </html>
