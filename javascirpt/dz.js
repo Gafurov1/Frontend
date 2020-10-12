@@ -30,6 +30,7 @@ for (let i = 2;i<=9;i++){
 let x = prompt('Введите число');
 let y = prompt('На сколько цифр сдвинуть');
 let result = '';
+
 for (let i = 1; i <= y; i++){
     result = '';
     for (let j = i; j < x.length ;j++){
