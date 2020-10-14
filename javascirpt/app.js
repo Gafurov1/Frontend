@@ -74,7 +74,7 @@ showArray(arr);
 let a = "asd";
 let b ="qwerty";
 let result = getMaxString(a,b);
-alert(resul
+alert(result);
 t);*/
 
 //Написать функцию, которая переводит в верхний регистр
@@ -118,14 +118,67 @@ alert(checkSpam('xxx'));*/
 // Например: truncate(“Hello, world!”, 8) должна вернуть
 // “Hello...”
 
-function truncate(str, maxlength) {
+/*function truncate(str, maxlength) {
     if (str.length > maxlength) {
         return str.slice(0, maxlength -3) + '...';
     }
     return str;
 }
-alert(truncate("Hello, world!" , 12));
+alert(truncate("Hello, world!" , 4));
+    */
 
+//Создайте пустой объект user.
+// Добавьте свойство name со значением John.
+// Добавьте свойство surname со значением Smith.
+// Измените значение свойства name на Pete.
+// Удалите свойство name из объекта.
 
+/*let user = {
+    name:'Jone',
+    surname : 'Smith',
+}
+user.name = 'Pete';
+delete user.name;*/
 
+//Напишите функцию isEmpty(obj), которая возвращает true, если у объекта нет свойств, иначе false.
+/*let schedule = {};
+function isEmpty() {
+    for (let key in schedule ) {
+        return false;
+    }
+    return true;
+}
+alert(isEmpty());*/
 
+//Сумма свойств объекта
+/*
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+}
+let sum = suma(salaries)
+
+function suma(salaries){
+    for (let key in salaries){
+        return salaries.John + salaries.Ann + salaries.Pete;
+    }
+    return 0;
+}
+alert(sum);*/
+
+//Умножаем все числовые свойства на 2
+let menu = {
+    width: 200,
+    height: 300,
+    title: "My menu"
+};
+function multiplyNumeric(menu){
+    for (let  key in menu) {
+        if(typeof menu[key] =='number'){
+            menu[key]*=2;
+        }
+    }
+}
+multiplyNumeric(menu);
+console.log(menu);
