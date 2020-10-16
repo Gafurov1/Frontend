@@ -168,6 +168,7 @@ function suma(salaries){
 alert(sum);*/
 
 //Умножаем все числовые свойства на 2
+/*
 let menu = {
     width: 200,
     height: 300,
@@ -182,3 +183,41 @@ function multiplyNumeric(menu){
 }
 multiplyNumeric(menu);
 console.log(menu);
+*/
+
+class User {
+    constructor(name,surname,billing) {
+        this.name = name;
+        this.surname = surname;
+        this.billing = billing;
+    }
+    set name(value) {
+        if (value.length <2) {
+            alert("Имя слишком короткое.");
+            return;
+        }
+        this._name = value;
+    }
+    get name(){
+        return this._name;
+    }
+    set billing(x){
+        if(x <= -1 || typeof x != 'number' ){
+            alert('error');
+        }else {
+            this._billing = x;
+        }
+    }
+    get billing(){
+        return this._billing;
+    }
+   }
+let user = new User ('Bil', 'Till',  123123);
+console.log(user);
+
+
+
+
+
+
+
