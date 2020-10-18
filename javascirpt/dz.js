@@ -1,48 +1,64 @@
-//10)
-/*
-alert('Задайте число 0 до 100');
-let a = 0;
-let b = 100;
-let answer = '';
-let  temp = 0;
-do{
-    temp = parseInt(a+b/2);
-    answer = prompt('Ваше число >, < или = ' + temp);
-    if(answer == '>'){
-    }else  if (answer =='<') {
-        b = temp;
-    }
+//1) Написать функцию сокращения строки. Функция принимает строку и ее максимальную длину. Если длина строки
+// больше, чем максимальная, то необходимо отбросить
+// лишние символы, добавив вместо них троеточие.
+// Например: truncate(“Hello, world!”, 8) должна вернуть
+// “Hello...”.
 
-    }while (answer !='=');
-alert('Введите число' + temp);
+/*
+function truncate(str, maxlength) {
+    return (str.length > maxlength) ?
+        str.slice(0, maxlength -1) + '…' : str;
+}
+console.log(truncate('Hello, world!', 8))
 */
 
-//9)
+//2)Написать функцию, которая проверяет, является ли переданная строка палиндромом.
+
 /*
-for (let i = 2;i<=9;i++){
-    for (let j=1; j<=10;j++){
-        document.write((i + ' * ' + j + ' = ' + i * j + '<br>'))
+function isStrPalindrome(str)
+{
+    let n = str.length;
+    for(let i = 0; i < n/2; i++)
+    {
+        if (str.charAt(i) !== str.charAt(n-1-i))
+            return false;
     }
-    document.write('<hr>')
+    return true;
 }
+console.log(isStrPalindrome('топот'));
 */
-//7)
-let x = prompt('Введите число');
-let y = prompt('На сколько цифр сдвинуть');
-let result = '';
 
-for (let i = 1; i <= y; i++){
-    result = '';
-    for (let j = i; j < x.length ;j++){
-        result +=x[j];
+//3) Написать функцию, которая считает количество слов в
+// предложении.
+/*
+function countWordsInSentence(sentence) {
+    sentence = sentence.split(" ");
+    for (let i = 0; i < sentence.length; i++) {
+        if (sentence[i] == "") {
+            sentence.splice(i, 1);
+        }
     }
-    result +=x[0];
-    x = result;
+    return (sentence.length);
 }
-alert(result);
+console.log(countWordsInSentence('123 aswda z asdasdasdads'))*/
 
+//4)Написать функцию, которая возвращает самое длинное
+// слово из предложения.
+/*
+function longestWordInSentence(sentence) {
+    sentence = sentence.split(" ");
+    let word = "";
 
+    for (let i = 0; i < sentence.length; i++) {
 
+        if (sentence[i].length > word.length) {
+            word = sentence[i];
+        }
 
+    }
+    return word;
+}
+console.log(longestWordInSentence('asd aaaaaaaas sdddddddd'))*/
 
-
+//5)Написать функцию, которая считает среднюю длину слова
+// в предложении.

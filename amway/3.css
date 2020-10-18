@@ -773,12 +773,13 @@ h2{
         font-size: 14px;
         line-height: 18px;
     }
-    .block5{
-        height: 600px;
-    }
     .block__right{
         width: 378px;
-        height: 500px;
+        height: 560px;
+        margin-bottom: 0;
+    }
+    .block5__left{
+        display: none;
     }
 }
 @media screen and (max-width: 768px) and (min-width: 380px){
@@ -807,7 +808,6 @@ h2{
         height: 82px;
         margin-left: 45px;
     }
-
     .title {
         font-family: Source Sans Pro;
         font-style: normal;
