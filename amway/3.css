@@ -14,7 +14,7 @@ body{
 }
 
 .inner__block5{
-    background-image: url(image/phonewith.svg);
+    background-image: url(image/Mask.png);
     background-repeat: no-repeat;
     width: 1196px;
     margin: 0 auto;
@@ -512,13 +512,13 @@ h2{
     color: #333333;
     border-radius: 10px;
 }
-@media screen and (max-width: 379px){
+@media screen and (max-width: 380px){
     .inner{
         flex-direction: column;
         width: 100%;
     }
     main{
-        height: 626px;
+        height: 667px;
     }
     .head{
         width: 379px;
@@ -695,6 +695,13 @@ h2{
     .new-amway__item--n4,.new-amway__item--n5,.new-amway__item--n6{
         display: none;
     }
+    new-amway__item:after {
+        content: ' ';
+        position: absolute;
+        margin-left: -2px;
+        border: 18px solid;
+        border-color: #fff transparent transparent #fff;
+    }
     .block4{
         width: 379px;
         height: 717px;
@@ -750,11 +757,16 @@ h2{
         width: 266px;
     }
     .title__end{
+       display: none;
+    }
+    .title_end_mobile{
         font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: normal;
         font-size: 18px;
         line-height: 23px;
+        color: #333333;
         margin-left: 30px;
-        margin-top: 22px;
     }
     .download__end{
         margin-left: 30px;
@@ -762,12 +774,11 @@ h2{
         line-height: 18px;
     }
     .block5{
-        max-width: 100%;
-
+        height: 600px;
     }
     .block__right{
         width: 378px;
-        height: 550px;
+        height: 500px;
     }
 }
 @media screen and (max-width: 768px) and (min-width: 380px){
@@ -778,6 +789,9 @@ h2{
     .head {
         width: 768px;
         height: 789px;
+    }
+    body{
+        width: 768px;
     }
     .pin {
         width: 337px;
@@ -812,7 +826,6 @@ h2{
         margin-left: 60px;
         margin-top: 50px;
     }
-
     .app img {
         width: 119px;
         height: 40px;
@@ -825,7 +838,7 @@ h2{
     }
 
     .phone img {
-        width: 395px;
+        width: 360px;
         height: 370px;
         margin-top: -31px;
         margin-left: 206px;
@@ -934,16 +947,20 @@ h2{
         line-height: 120.7%;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.5);
-        margin-right: -30px;
+        width: 50px;
+        margin-left: 100px;
     }
-    .block__center img{
-        margin-left: 440px;
-        margin-top: 207px;
-        margin-right: 48px;
-        width: 280px;
-        height: 551.09px;
-        background-image: url("image/adaptif_phone_2.png");
+    .block__center{
+        background-image: url("image/adaptiv.phone.png");
         background-repeat: no-repeat;
+        margin-top: 170px;
+        margin-left: 220px;
+    }
+    .block3__right{
+        margin-left: -300px;
+    }
+    .block4__center{
+        width: 300px;
     }
     .new-amway__item {
         font-weight: 600;
@@ -955,24 +972,31 @@ h2{
     .item--1{
         padding: 13px 8px 21px 30px;
         white-space: nowrap;
-        width: 203px;
-        margin-top: 115px;
+        width: 160px;
+        margin-top: 120px;
     }
     .new-amway__item--n2{
         margin-top: 70px;
         padding: 15px 17px 19px 30px;
         white-space: normal;
-        width: 348px;
+        width: 290px;
         word-wrap: normal;
     }
     .item--3{
         padding: 17px 6px 17px 30px;
         word-wrap: normal;
-        width: 212px;
-        margin-top: 70px;
+        width: 170px;
+        margin-top: 50px;
     }
     .new-amway__item--n4,.new-amway__item--n5,.new-amway__item--n6{
         display: none;
+    }
+    .new-amway__item:after{
+        content: ' ';
+        position: absolute;
+        margin-left: 23px;
+        border: 15px solid;
+        border-color: #fff transparent transparent #fff;
     }
     .block4{
         width: 768px;
@@ -993,17 +1017,19 @@ h2{
         width: 586px;
         height: 63px;
     }
+    .text br{
+        display: none;
+    }
     .block4__center img{
         overflow: visible;
-        width: 277px;
-        height: 483px;
-        margin-left: 62px;
+        width: 470px;
+        height: 570px;
         filter: drop-shadow(0px 3.99258px 49.9072px rgba(0, 0, 0, 0.1));
         margin-top: 50px ;
     }
     .block4__right{
-        margin-left: 412px;
-        margin-top: -550px;
+        margin-left: 450px;
+        margin-top: -630px;
         width: 293px;
     }
     .feature--green{
@@ -1056,5 +1082,13 @@ h2{
     .block__right{
         width: 768px;
         height: 600px;
+    }
+    .title_end_mobile{
+        display: none;
+    }
+}
+@media screen and (min-width: 400px) {
+    .title_end_mobile{
+        display: none;
     }
 }
