@@ -252,6 +252,4 @@ items.sort(function (a, b) {
     }
       return 0;
 });
-
 console.log(copySorted(items));
-document.write(result);
