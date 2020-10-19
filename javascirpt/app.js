@@ -1,16 +1,16 @@
 // Создать массив из 10 чисел и написать несколько функций для работы с ним
 
- let arr = [];
+/* let arr = [];
  for (let i = 0; i<10; i++){
      arr.push(parseInt(Math.random() *100));
-}
+}*/
 
 //2)Функция принимает массив и  выводит его на экран.
-function  showArray(array) {
+/*function  showArray(array) {
      for (let item of array){
          document.write(item + '<br>');
      }
- }
+ }*/
 //3)Функция принимает массив и выводит только четные элементы
     /*function  showEvenArrayElements(array){
         for (let item of array){
@@ -185,7 +185,7 @@ multiplyNumeric(menu);
 console.log(menu);
 */
 
-class User {
+/*class User {
     constructor(name,surname,billing) {
         this.name = name;
         this.surname = surname;
@@ -213,11 +213,45 @@ class User {
     }
    }
 let user = new User ('Bil', 'Till',  123123);
-console.log(user);
+console.log(user);*/
 
+//Дан пустой массив let a = [];
+// Дан массив let b = [‘item1’, ‘item2’, ‘item3’, ‘item4’];
+// Необходимо перенести элементы из массива b в массив a так, чтобы в массиве a элементы были в обратном порядке. Использовать метод reverse() запрещено
 
+/*let a = [];
+let b = ['item1', 'item2', 'item3', 'item4'] ;
+let index;
+for (index = b.length - 1; index >= 0; --index){
+    console.log(b[index]);
+}*/
 
+//
+let items = [
+    {id: 1, sum: 12},
+    {id: 2, sum: 18},
+    {id: 3, sum: 1},
+    {id: 4, sum:-2},
+    {id: 5, sum: 12},
+    {id: 6, sum: 6},
+    {id: 7, sum: 8},
+    {id: 8, sum: 104},
+    {id: 9, sum: 13},
+    {id: 10, sum: 23},
+    {id: 11, sum: 2},
+];
+function copySorted(items) {
+    return items.slice().sort();
+}
+items.sort(function (a, b) {
+    if (a.sum < b.sum) {
+        return 1;
+    }
+    if (a.sum > b.sum) {
+        return -1;
+    }
+      return 0;
+});
 
-
-
-
+console.log(copySorted(items));
+document.write(result);
