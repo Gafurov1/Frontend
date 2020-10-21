@@ -222,9 +222,8 @@ console.log(user);*/
 let a = [];
 let b = ['item1', 'item2', 'item3', 'item4'] ;
 let res = a.concat(b);
-let index;
-for (index = res.length - 1; index >= 0; --index){
-    document.write(res[index] + ',  ');
+for (let i = res.length - 1; i >= 0; --i){
+    document.write(res[i] + ', ');
 }
 //
 /*let items = [
@@ -253,3 +252,4 @@ items.sort(function (a, b) {
       return 0;
 });
 console.log(copySorted(items));*/
+
