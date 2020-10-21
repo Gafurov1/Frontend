@@ -219,15 +219,15 @@ console.log(user);*/
 // Дан массив let b = [‘item1’, ‘item2’, ‘item3’, ‘item4’];
 // Необходимо перенести элементы из массива b в массив a так, чтобы в массиве a элементы были в обратном порядке. Использовать метод reverse() запрещено
 
-/*let a = [];
+let a = [];
 let b = ['item1', 'item2', 'item3', 'item4'] ;
+let res = a.concat(b);
 let index;
-for (index = b.length - 1; index >= 0; --index){
-    console.log(b[index]);
-}*/
-
+for (index = res.length - 1; index >= 0; --index){
+    document.write(res[index] + ',  ');
+}
 //
-let items = [
+/*let items = [
     {id: 1, sum: 12},
     {id: 2, sum: 18},
     {id: 3, sum: 1},
@@ -252,4 +252,4 @@ items.sort(function (a, b) {
     }
       return 0;
 });
-console.log(copySorted(items));
+console.log(copySorted(items));*/
