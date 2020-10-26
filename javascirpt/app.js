@@ -219,12 +219,12 @@ console.log(user);*/
 // Дан массив let b = [‘item1’, ‘item2’, ‘item3’, ‘item4’];
 // Необходимо перенести элементы из массива b в массив a так, чтобы в массиве a элементы были в обратном порядке. Использовать метод reverse() запрещено
 
-let a = [];
+/*let a = [];
 let b = ['item1', 'item2', 'item3', 'item4'] ;
 let res = a.concat(b);
 for (let i = res.length - 1; i >= 0; --i){
     document.write(res[i] + ', ');
-}
+}*/
 //
 /*let items = [
     {id: 1, sum: 12},
@@ -252,4 +252,72 @@ items.sort(function (a, b) {
       return 0;
 });
 console.log(copySorted(items));*/
+/*class Figure {
+    name = ''
+    constructor(params) {
+        this.params = params;
+    }
 
+    getArea() {
+
+    }
+
+
+
+    get() {
+        return this.name;
+    }
+}
+
+class Square extends Figure {
+    constructor(params) {
+        super(params);
+        this.name = 'Треугольник';
+    }
+    getArea() {
+        //super.getArea();
+        return this.params[0] ** 2;
+    }
+}
+
+class Triangle extends Figure {
+    constructor(params) {
+        super(params);
+        this.name = 'Треугольник';
+    }
+
+    getArea() {
+        let height = this.getHeight(this.params[0], this.params[2]);
+        return (height * this.params[0]) / 2;
+    }
+
+    getHeight(a, b) {
+        return (a * b) / Math.sqrt((a ** 2 + b ** 2));
+    }
+}
+
+class Rectangle extends Figure{
+    constructor(params) {
+        super(params);
+        this.name = 'Прямоугольник'
+    }
+    getArea() {
+        return this.params[0] * this.params[1];
+    }
+    getPerimetr(){
+        return this.params[0] * 2 + this.params[1] * 2;
+    }
+}
+
+
+
+/!*let objSquare = new Square([2, 2, 2, 2]);
+console.log(objSquare.getArea());
+console.log(objSquare.get());
+
+let objTriangle = new Triangle([1, 2, 3]);
+console.log(objTriangle.getArea());*!/
+
+let objRectangle = new Rectangle ([1,2]);
+console.log(objRectangle.getArea());
+console.log(objRectangle.getPerimetr());*/
