@@ -321,3 +321,17 @@ console.log(objTriangle.getArea());*!/
 let objRectangle = new Rectangle ([1,2]);
 console.log(objRectangle.getArea());
 console.log(objRectangle.getPerimetr());*/
+
+
+let elem = document.getElementById('age-table')
+ console.log(elem);
+let a =elem.getElementsByTagName('label');
+console.log(a);
+let b = elem.querySelector('td');
+console.log(b);
+let c = document.body.querySelector('form[name="search"]');
+console.log(c);
+let d = elem.querySelector('input');
+console.log(d);
+let last = c[c.length-1];
+console.log(last);
