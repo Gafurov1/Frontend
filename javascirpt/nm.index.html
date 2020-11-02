@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    form{
+        display: none;
+/*
+        display: flex;
+*/
+        flex-direction: column;
+        width: 300px;
+        padding: 20px;
+        background-color: #fefefe   ;
+        margin:  auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 200px;
+        box-shadow: 5px 10px 5px #666;
+    }
+    input{
+        margin-top: 10px;
+    }
+    button{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width: 20px;
+        height: 20px;
+        float: right;
+        margin-top: -10px;
+    }
+
+</style>
+<button style="text-align: center" onclick="openForm()">Нажми меня </button>
+<form id="myForm">
+    <img src="x.png.png">
+    <input type="text">
+    <input type="text">
+    <button>Отправить</button>
+</form>
+</body>
+<script>
+    function openForm(){
+        document.getElementById('myForm').style.display = 'block';
+    }
+    function closeForm(){
+
+    }
+</script>
+</html>

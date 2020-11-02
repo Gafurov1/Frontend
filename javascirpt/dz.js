@@ -62,3 +62,4 @@ console.log(longestWordInSentence('asd aaaaaaaas sdddddddd'))*/
 
 //5)Написать функцию, которая считает среднюю длину слова
 // в предложении.
+
