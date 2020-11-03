@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<div>
 <style>
     form{
         display: none;
@@ -23,6 +23,7 @@
     }
     input{
         margin-top: 10px;
+        align-items: center;
     }
     button{
         margin-top: 10px;
@@ -35,22 +36,22 @@
         float: right;
         margin-top: -10px;
     }
-
 </style>
-<button style="text-align: center" onclick="openForm()">Нажми меня </button>
-<form id="myForm">
-    <img src="x.png.png">
-    <input type="text">
-    <input type="text">
-    <button>Отправить</button>
-</form>
+        <button style="text-align: center" onclick="openForm()">Нажми меня</button>
+        <form id="myForm">
+            <div id="close" onclick="closeForm()"><img src="x.png.png">
+                <input type="text">
+                <input type="text">
+                <button>Отправить</button>
+        </form>
+</div>
 </body>
 <script>
     function openForm(){
         document.getElementById('myForm').style.display = 'block';
     }
     function closeForm(){
-
+        document.getElementById('myForm').style.display = 'none';
     }
 </script>
 </html>
