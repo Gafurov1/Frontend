@@ -30,22 +30,31 @@
         display: flex;
         flex-direction: column;
     }
-    img{
+    img {
         width: 20px;
         height: 20px;
         float: right;
         margin-top: -10px;
     }
+    p{
+        display: none;
+        color: black;
+        margin-bottom: -10px;
+        font-size: 13px;
+    }
 </style>
-        <button style="text-align: center" onclick="openForm()">Нажми меня</button>
-        <form id="myForm">
-            <div id="close" onclick="closeForm()"><img src="x.png.png">
-                <input type="text">
-                <input type="text">
-                <button>Отправить</button>
-        </form>
+    <button style="text-align: center" onclick="openForm()">Нажми меня</button>
+    <form id="myForm">
+        <div id="close" onclick="closeForm()"><img src="x.png.png"></div>
+        <p id="help">Введите ваше имя</p>
+            <input type="text"  onfocus="help()" onblur="closeHelp()" class="name">
+        <p id="help_2">Введите номер телефона</p>
+            <input type="text" onfocus="help2()" onblur="closeHelp2()" class="tel">
+            <button>Отправить</button>
+    </form>
 </div>
 </body>
+
 <script>
     function openForm(){
         document.getElementById('myForm').style.display = 'block';
@@ -53,5 +62,29 @@
     function closeForm(){
         document.getElementById('myForm').style.display = 'none';
     }
+    function help(){
+        document.getElementById('help').style.display = 'block';
+    }
+    function closeHelp(){
+        document.getElementById('help').style.display= 'none';
+    }
+    function help2(){
+        document.getElementById('help_2').style.display = 'block';
+    }
+    function closeHelp2(){
+        document.getElementById('help_2').style.display= 'none';
+    }
+    let a = /^[0-9]+/;
+    let z = /([A-Za-z/;
+    let b = document.querySelector('form');
+    b.addEventListener('submit',function (event) {
+      event.preventDefault();
+      let name = document.querySelector('.name');
+      let tel = document.querySelectorAll('.tel');
+      let user = name.value;
+      let telnum = tel.value;
+
+    })
+
 </script>
 </html>
