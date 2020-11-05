@@ -100,7 +100,7 @@ h1{
     width: 200px;
     height: 45px;
     background: #E54B31;
-    margin-top: -280px;
+    margin-top: -270px;
     margin-left: 10px;
 }
 .button p,.button_yellow p,.button_blue p{
@@ -111,7 +111,8 @@ h1{
     line-height: 120%;
     text-align: center;
     color: #FFFFFF;
-    padding: 10px;
+    margin: 10px 0 0 50px;
+    position: absolute;
 }
 .x {
     position: absolute;
