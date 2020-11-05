@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+
+/*Меню*/
+body{
+    margin: auto;
+}
+.inner{
+    width: 1200px;
+    margin: 0;
+}
+.head{
+    background-color: #362469;
+    width: 100%;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    margin: 17px 0 0 7px;
+}
+.nav p{
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: white;
+    padding: 10px 17mm 0 0;
+    white-space: nowrap;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin: -64px 0 0 50mm;
+}
+.social_networks img{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    padding: 3px;
+}
+.social_networks{
+    margin-top: -44px;
+    display: flex;
+    margin-left: 1056px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:active{
+    text-decoration: none;
+}
+/*Бренд*/
+.brand{
+    width: 100%;
+    height: 1860px;
+    background: #2e1f59;
+    display: flex;
+    justify-content: center;
+}
+.gradient{
+    height: 900px;
+    width: 100% ;
+    position: absolute;
+    background: linear-gradient(180deg, #FF4949 0%, rgba(132, 132, 132, 0) 30% );
+    opacity: 0.3;
+    display: flex;
+    justify-content: center;
+}
+.xs{
+    background-image: url("image/xs_back.png");
+    height: 798px;
+    background-repeat: no-repeat;
+    margin-top: -15px;
+    margin-left: -300px;
+}
+.tablet img{
+    margin-top: -780px;
+    margin-left: 348px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+h1{
+    font-family: Roboto Condensed, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: white;
+}
+.new_line{
+    margin-top: -556px;
+    margin-left: 5px;
+}
+.button{
+    width: 200px;
+    height: 45px;
+    background: #E54B31;
+    margin-top: -280px;
+    margin-left: 10px;
+}
+.button p,.button_yellow p,.button_blue p{
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px;
+}
+.x {
+    position: absolute;
+    margin-right: 1480px;
+    margin-top: 115px;
+}
+.triangle{
+    margin-top: -740px;
+    position: absolute;
+    margin-left: 113px;
+}
+.triangle_2 img{
+    margin-left:1226px ;
+    margin-top: 243px;
+    position: absolute;
+    transform: rotate(4deg);
+    width: 70px;
+    height: 73px;
+}
+.rectangle{
+    margin-top: -600px;
+    margin-left: 840px;
+    position: absolute;
+}
+.life{
+    font-family: Roboto Condensed, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 840px;
+    margin-top: 84px;
+    white-space: nowrap;
+}
+.rectangle_yellow{
+    margin-left: 186px;
+    margin-top: -145px;
+}
+.close{
+    margin-left: 645px;
+}
+.about_brand{
+    margin-top: 423px;
+}
+.history,.history_2,.history_3,.history_4{
+    font-family: Source Sans Pro, serif;
+    font-style:normal ;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.history{
+    margin-top: -100px;
+    margin-left: 303px;
+}
+.men img{
+    margin-top: 60px;
+    position: relative;
+}
+span{
+    font-family: Roboto Condensed, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #31215F;
+    position: absolute;
+    margin-top: -500px;
+    margin-left: 76px;
+}
+.say{
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+    margin-top: -380px;
+    margin-left: 78px;
+    position: absolute;
+}
+.agent{
+    font-family: Source Sans Pro, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: #000000;
+    position: absolute;
+    margin-top: -55px;
+    margin-left: 78px;
+    white-space: normal ;
+}
+.star{
+    margin-top: -1px;
+    position: absolute;
+    margin-left: -10px;
+    font-size: 14px;
+    color: #000000;
+}
+.motive{
+    font-family: Roboto Condensed, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+/*3 block*/
+.power_drink{
+    background-image: url("image/phone.png");
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center ;
+
+}
+.drink{
+    width: 277px;
+    height: 106px;
+    padding-top: 148px;
+    margin-top: 0;
+}
+.button_yellow{
+    width: 200px;
+    height: 45px;
+    background: #E8D313;
+    margin-top: 45px;
+}
+/*4 block*/
+.radiola{
+    background-image:url("image/radiola.png");
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+}
+.nut img{
+    margin-left: -50px;
+}
+.rad{
+    margin-top: -400px;
+    margin-left: 829px;
+    white-space: nowrap;
+}
+.history_3{
+    margin-left: 829px ;
+    margin-top: -22px    ;
+}
+.button_blue{
+    width: 200px;
+    height: 45px;
+    background: #4F5BB8;
+    margin-left: 829px;
+    margin-top: 45px;
+}
+/*5 block*/
+.shoes_phone{
+    background-image:url("image/shoes_phone.png");
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+}
+.shoes{
+    margin-top: 136px;
+}
+.power img{
+    margin-top: -423px;
+    margin-left: 610px;
+}
+.button--black p{
+    color: black;
+}
+/*последний блок*/
+.last_block{
+    width: 100%;
+    height: 1782px;
+    background-color: #271b4b;
+    display: flex;
+    justify-content: center;
+}
+
+.social{
+    margin-top: 100px;
+}
+.photo{
+    flex-direction: row;
+    display: flex;
+    margin-top: 60px;
+}
+.name{
+    font-family: Source Sans Pro,serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 120%;
+    color: #FFFFFF;
+    position: absolute;
+    margin-left: 422px;
+    margin-top: 259px;
+}
+.photo_2{
+    flex-direction: row;
+    display: flex;
+}
+.cola {
+    width: 300px;
+    height: 300px;
+}
+.footer_back{
+    width: 600px;
+    height: 600px;
+    background: #FEBC2D;
+}
+.footer{
+    margin-top: 81px;
+    margin-left: 45px;
+}
+.footer_prepend{
+    font-family: Source Sans Pro,serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 120%;
+    color: #000000;
+    margin-left: 45px;
+}
+.footer--soc{
+    margin-top: 213px;
+}
+.footer--mail{
+    font-size: 36px;
+    margin-top: -55px;
+    margin-left: 281px;
+}
+.photo_3{
+    display:flex;
+    flex-direction: column;
+}
+.photo_4{
+    display: flex;
+    flex-direction: row;
+}
+.footer_text{
+    font-family: Source Sans Pro,serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    color: #918BA0;
+    margin-top: 60px;
+}
+.big--text{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.footer_logo img{
+    margin-left: 566px;
+    margin-top: 47px;
+}
