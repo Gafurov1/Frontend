@@ -43,15 +43,6 @@
         font-size: 13px;
     }
 </style>
-<<<<<<< HEAD
-        <button style="text-align: center" onclick="openForm()">Нажми меня</button>
-        <form id="myForm">
-            <div id="close" onclick="closeForm()"><img src="x.png.png"></div>
-                <input type="text">
-                <input type="text">
-                <button>Отправить</button>
-        </form>
-=======
     <button style="text-align: center" onclick="openForm()">Нажми меня</button>
     <form id="myForm">
         <div id="close" onclick="closeForm()"><img src="x.png.png"></div>
@@ -61,7 +52,6 @@
             <input type="text" onfocus="help2()" onblur="closeHelp2()" class="tel">
             <button>Отправить</button>
     </form>
->>>>>>> e8d2a3a9ee13ab799c1fa669cef0f4861486c528
 </div>
 </body>
 
@@ -81,20 +71,38 @@
     function help2(){
         document.getElementById('help_2').style.display = 'block';
     }
-    function closeHelp2(){
-        document.getElementById('help_2').style.display= 'none';
+    function closeHelp2() {
+        document.getElementById('help_2').style.display = 'none';
     }
-    let a = /^[0-9]+/;
-    let z = /([A-Za-z/;
-    let b = document.querySelector('form');
-    b.addEventListener('submit',function (event) {
-      event.preventDefault();
-      let name = document.querySelector('.name');
-      let tel = document.querySelectorAll('.tel');
-      let user = name.value;
-      let telnum = tel.value;
 
-    })
+    let a = /^[0-9]+/;
+    let z = /['A-z','A-я',''\s']/;
+    let arr = [];
+    let messInner = document.querySelector(".message__text");
+    let b = document.querySelector('form');
+    b.addEventListener('submit', function (event){
+        event.preventDefault();
+        let name = document.querySelector('.name');
+        let tel = document.querySelectorAll('.tel');
+        let user = name.value;
+        let telnumber = tel.value;
+        if (z.test(telnumber) || telnumber.length < 10 || telnumber == undefined) {
+            arr[i] =
+                "Необходимо ввести в поле телефон  не менее 10 чисел. Буквы не допускаются";
+            messBlock.style.display = "flex";
+        }
+        if (a.test(user) || user.length < 2 || user == undefined) {
+            arr[++i] =
+                "Необходимо ввести в поле имя не менее 2х букв. Цифры вводить не допускается";
+            messBlock.style.display = "flex";
+        }
+        if (arr.length == 1) {
+            messInner.innerHTML = arr[0];
+        } else if (arr.length > 1) {
+            messInner.innerHTML = arr[i] + "<br>" + "<br>" + arr[--i];
+        }
+    });
+
 
 </script>
 </html>
