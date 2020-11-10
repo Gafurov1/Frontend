@@ -2,24 +2,57 @@
 <html>
 <meta charset="utf-8">
 <body>
-<h1>Список дел :</h1>
-
 <script>
-    let ul = document.createElement('ul')
-    document.body.append(ul);
+    function sumElements(a) {
+ let sum = 0;
+ for (let elem of document.querySelectorAll(a)) {
+ if (elem.matches(a)) {
+ sum++;
+ }
+ }
+ return sum;
+ }
 
-    while (true) {
-        let data = prompt("Введите текст для элемента списка", "");
+ console.log(sumElements('div'));
 
-        if (!data) {
-            break;
+    let doList = prompt('введите запланированные дела через запятую', 'сделать зарядку, сходить в магазин, сделать дз')
+    const affairs = doList.split(',');
+    let timeList = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24];
+    console.log(timeList);
+
+    let ul = document.createElement('ul');
+    let ulTemp = '';
+    let ulTemp2 = '';
+    let ul2 = document.createElement('ul');
+    for (let i = 0; i < affairs.length; i++) {
+//ulTemp += '<li>' + timeList[i] + affairs[i] + '</li>';
+        if (i < 6) {
+            ulTemp += '<li>' + timeList[i] + affairs[i] + '</li>';
+        } else {
+            ulTemp2 += '<li>' + timeList[i] + affairs[i] + '</li>';
         }
-
-          let li = document.createElement('li');
-          li.textContent = data;
-          ul.append(li);
-
     }
+    ul2.style.color = 'red';
+
+    if (ulTemp.length > 0) {
+        let h1 = document.createElement('h1');
+        h1.innerHTML = 'Список дел:';
+        document.body.append(h1);
+        ul.innerHTML = ulTemp;
+        document.body.append(ul);
+    }
+    if (ulTemp2.length > 0) {
+        let h2 = document.createElement('h1');
+        h2.innerHTML = 'А эти дела, пожалуй, лучше перенести на завтра:';
+        h2.style.color = 'red';
+        document.body.append(h2);
+        ul2.innerHTML = ulTemp2;
+        document.body.append(ul2);
+    }
+    *//1) Написать функцию, которая будет принимать на вход название элемента html, и посчитать кол-во найденных элементов на странице.
+    /*let a = prompt('Название HTML элемента');//Запрос пользователю какой элемент будем искать
+    let elem =document.getElementsByTagName(a).length;//Ищем элемент по тегу.
+    console.log(elem);*!/*/
 </script>
 </body>
 </html>

@@ -37,12 +37,35 @@
 </div>
 <script>
     $(document).ready(function () {
+
         $('#but1').click(function () {
-            $('#but1').css('color', 'green')
-
-
+            $('p#par1').css('color', 'green').css('fontSize', '20px')
+        }).dblclick(function () {
+            $('p#par1').css('color', '').css('font-size', '')
+        })
+        $('#href1').mouseover(function () {
+            $('#href1').css('color', 'red')
+        })
+        $('#href1').mouseout(function () {
+            $('#href1').css('color', '')
+        })
+        $('#text1').select(function () {
+            $(this).css('color', 'red').css('font-size', '20px')
+        })
+        $( "#but2" ).click(function() {
+            $( "#par2").toggle(function (){
+                $("#par2" ).css("color","red");
+                $("#par2").css("font-family","Times New Roman");
+                })
+                $( "#par2").toggle(function(){
+                $("#par2").css("color","blue");
+                $("#par2").css("font-size","20px");
+            });
         });
-    });
+        });
+
+
+
 </script>
 </body>
 </html>

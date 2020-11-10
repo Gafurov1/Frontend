@@ -181,7 +181,7 @@ h3 {
 
 .element1{
     display: flex;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 248px;
     background-image: url("../image/img.svg");
     background-repeat:no-repeat ;
@@ -209,7 +209,7 @@ h3 {
 }
 .element2{
     display: flex;
-    margin: 0px auto;
+    margin: 0 auto;
     width: 248px;
     background-image: url("../image/vipephone.svg");
     background-repeat:no-repeat ;
