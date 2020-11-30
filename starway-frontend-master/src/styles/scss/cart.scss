@@ -1,0 +1,67 @@
+body{
+  background: #FCF1F1;
+  h1{
+    margin: 168px 0 0 566px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #313131;
+  }
+}
+.form {
+
+  .form1{
+    width: 750px;
+    height: 315px;
+    background: #FFE2E2;
+    border: 2px solid #FFB0B0;
+    box-sizing: border-box;
+    margin: 100px 0 0 170px;
+  }
+
+  h6{
+    margin:40px 0 0 230px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 70%;
+    letter-spacing: 0.05em;
+    color: #313131;
+  }
+  .form1_image{
+    margin: 30px 0 30px 30px;
+    position: absolute;
+  }
+  p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: rgba(49, 49, 49, 0.8);
+  }
+  .give{
+    margin: 52px 0 175px 230px;
+  }
+  .size{
+    margin: -160px 0 0 230px;
+  }
+  .color{
+    margin: 23px 0 0  230px;
+  }
+  .give_text{
+    margin: -9px 0 0 645px;
+  }
+
+  a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 70%;
+    letter-spacing: 0.05em;
+    color: rgba(49, 49, 49, 0.8);
+    margin: 40px 0 0 230px;
+    position: absolute;
+  }
+}

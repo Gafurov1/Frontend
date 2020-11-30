@@ -12,6 +12,25 @@ html.fixed {
         font-family: 'Cormorant Unicase', serif;
     }
 
+    .block-title {
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 90%;
+        letter-spacing: 0.2em;
+    }
+
+
+    .title {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 60px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+    }
+
+
     .inner {
         max-width: 1168px;
         margin: 0 auto;

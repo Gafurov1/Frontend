@@ -1,0 +1,20 @@
+extends include/layout
+append sharedVars
+    - const pageUrl = '/';
+    - const pageTitle = 'Корзина';
+    - const bodyAdditionClass = '';
+    - const pageAdditionClass = 'cart';
+block content
+       h1 Корзина для покупок
+       section.form
+             div.form1
+              img.form1_image(src=require("../images/cart/3.png"))
+              h6 Шёлковая пижама
+               h6.give_text Подарок
+              p.give
+                | Подарок на сумму:
+                br
+                | 4000-6000₽
+              p.size Размер: s
+              p.color Цвет
+              a(class='detail' href='#') подробнее

@@ -1,23 +1,8 @@
 import Vue from 'vue'
 //import 'owl.carousel';
 //import '@fancyapps/fancybox'
-;
 
 
-// Import logger
-import { log, LogLevel } from 'missionlog';
-
-// Initializing the logger
-log.init({ initializer: 'INFO' }, (level, tag, msg, params) => {
-    console.log(`${level}: [${tag}] `, msg, ...params);
-});
-
-export default class ExamplePlugin extends Plugin {
-    init() {
-        console.log('init');
-        log.info('initializer', 'example plugin got started', this);
-    }
-}
 
 $(document).ready(function () {
     $('.js-show-menu').on('click', function (e) {

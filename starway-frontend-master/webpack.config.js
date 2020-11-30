@@ -15,26 +15,10 @@ const plugins = {
   sri: require('webpack-subresource-integrity'),
   vue: require('vue-loader'),
 };
+
 const pages = fs
   .readdirSync(path.resolve(__dirname, 'src/pages'))
   .filter(fileName => (fileName.endsWith('.html') || fileName.endsWith('.pug')));
-
-
-
-const { join, resolve } = require('path');
-module.exports = () => {
-  return {
-    resolve: {
-      alias: {
-        '@missionlog': resolve(
-            join(__dirname, '..', 'node_modules', 'missionlog')
-        )
-      }
-    }
-  };
-}
-
-
 
 module.exports = (env = {}, argv) => {
   const isProduction = argv.mode === 'production';

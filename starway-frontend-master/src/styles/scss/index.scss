@@ -58,4 +58,17 @@
             }
         }
     }
+
+    .new-collection {
+        background: $colorBg;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__content {
+            width: 50%;
+        }
+
+    }
 }
