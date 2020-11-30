@@ -8,8 +8,8 @@ $('.text').on('input', function() {
 });
 //вывод цифр по нажатию мышки на цифры кроме стирания
 $('button').not('.clean').click(function (){
-    let text =+ $(this).text();
-    $("input").val+(text);
+    let text =$(this).text();
+    $("input").val(text);
 });
 /*document.addEventListener('keydown', event => {
     if ((event.key).match(/[0-9%\/!*\-+\(\)=]|Backspace|Enter/)) number(event.key)
