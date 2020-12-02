@@ -5,16 +5,43 @@ append sharedVars
     - const bodyAdditionClass = '';
     - const pageAdditionClass = 'cart';
 block content
-       h1 Корзина для покупок
-       section.form
-             div.form1
-              img.form1_image(src=require("../images/cart/3.png"))
-              h6 Шёлковая пижама
-               h6.give_text Подарок
-              p.give
+    h1 Корзина для покупок
+        p.mobile__text Итог заказа
+            p.sum Промежуточный итог:
+                      span.sum_1   4000
+        div.mobile__button
+            a(class='mobile__button--text' href='#') Оформить
+                img.arrow(src=require("../images/cart/arrow.png"))
+    section.form__order
+        p.sum__order Итог заказа
+        h6.order   Промежуточный итог:
+            h6.sum 4000₽
+        input(
+            placeholder='Подарочная карта'
+        )
+        div.mobile__button
+            a(class='desktop__text' href='#') Оформить
+                img.arrow(src=require("../images/cart/arrow.png"))
+    section.form
+        div.form1
+            img.form1_image(src=require("../images/cart/3.png"))
+            h6 Шёлковая пижама
+                h6.give_text Подарок
+            p.give
                 | Подарок на сумму:
                 br
                 | 4000-6000₽
-              p.size Размер: s
-              p.color Цвет
-              a(class='detail' href='#') подробнее
+            p.size Размер: s
+            p.color Цвет
+            a(class='detail' href='#') подробнее
+            img.heart(src=require("../images/cart/heart.svg"))
+    section.form_2
+        div.form2
+            img.form_girl(src=require("../images/cart/girl.png"))
+            h6 Шёлковая пижама
+                h6.give_text 2000₽
+            p.quality Количество:   -  1  +
+            p.size Размер: s
+            p.color Цвет
+            a(class='detail' href='#') удалить
+            img.heart(src=require("../images/cart/heart.svg"))

@@ -1,67 +1,371 @@
-body{
+body {
   background: #FCF1F1;
-  h1{
-    margin: 168px 0 0 566px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 100%;
-    letter-spacing: -0.02em;
-    color: #313131;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  margin: 168px 0 0 666px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #313131;
+  @include mediaWidth(768) {
+    white-space: nowrap;
+    margin: 100px 143px 0 144px;
+    font-size: 50px;
+  }
+  .mobile__text {
+    display: none;
+    @include mediaWidth(768) {
+      display: block;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 90%;
+      letter-spacing: 0.2em;
+      color: #313131;
+      margin: 50px 334px 0 188px;
+    }
+  }
+  .sum {
+    display: none;
+    @include mediaWidth(768) {
+      display: block;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 70%;
+      letter-spacing: 0.05em;
+      color: #313131;
+      margin: 20px 100px 40px 110px;
+    }
   }
 }
-.form {
 
-  .form1{
+@mixin button($m) {
+  width: 335px;
+  height: 60px;
+  background: #FFB0B0;
+  margin: $m;
+}
+
+@mixin button_text {
+  display: block;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 60%;
+  letter-spacing: 0.05em;
+  color: #313131;
+  margin: 25px 139px 26px 119px;
+  position: absolute;
+}
+
+//768with
+.mobile__button {
+  @include mediaWidth(768) {
+    @include button(40px 0 0 72px);
+  }
+
+  .mobile__button--text {
+    display: none;
+    @include mediaWidth(768) {
+      display: block;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 60%;
+      letter-spacing: 0.05em;
+      color: #313131;
+      margin: 25px 139px 26px 119px;
+      position: absolute;
+    }
+  }
+
+  .arrow {
+    margin: -12px 10px 10px 83px;
+    @include mediaWidth(768) {
+      margin: -3px 120px 25px 10px;
+      position: absolute;
+    }
+  }
+}
+
+//Первый блок
+.form {
+  @mixin things($m) {
     width: 750px;
     height: 315px;
     background: #FFE2E2;
     border: 2px solid #FFB0B0;
     box-sizing: border-box;
-    margin: 100px 0 0 170px;
+    margin: $m;
   }
-
-  h6{
-    margin:40px 0 0 230px;
+  @mixin img() {
+    margin: 30px 0 30px 30px;
+    position: absolute;
+  }
+  @mixin title() {
+    margin: 40px 0 0 230px;
     font-style: normal;
     font-size: 14px;
     line-height: 70%;
     letter-spacing: 0.05em;
     color: #313131;
   }
-  .form1_image{
-    margin: 30px 0 30px 30px;
-    position: absolute;
-  }
-  p{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 140%;
-    letter-spacing: 0.05em;
-    color: rgba(49, 49, 49, 0.8);
-  }
-  .give{
+  @mixin give() {
     margin: 52px 0 175px 230px;
   }
-  .size{
-    margin: -160px 0 0 230px;
+  @mixin size($m) {
+    margin: $m;
   }
-  .color{
-    margin: 23px 0 0  230px;
-  }
-  .give_text{
-    margin: -9px 0 0 645px;
-  }
-
-  a{
+  @mixin detail($m) {
+    text-decoration: none;
+    border-bottom: 2px solid rgba(49, 49, 49, 0.8);;
+    padding-bottom: 3px;
+    line-height: 2px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 70%;
     letter-spacing: 0.05em;
     color: rgba(49, 49, 49, 0.8);
-    margin: 40px 0 0 230px;
+    margin: $m;
     position: absolute;
+  }
+
+  .form1 {
+    @include things(100px 10px 10px 370px);
+    @include mediaWidth(768) {
+      background: #FCF1F1;
+      margin: 69px 0 0 0;
+      border-right-width: 0;
+      border-left-width: 0;
+      width: 768px;
+    }
+  }
+
+  h6 {
+    @include title();
+  }
+
+  .form1_image {
+    @include img();
+  }
+
+  .size {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+      color: rgba(49, 49, 49, 0.8);
+  }
+
+  .give {
+    margin: 52px 0 175px 230px;
+  }
+
+  .size {
+    @include size(-160px 0 0 230px);
+  }
+
+  .color {
+    margin: 23px 0 0 230px;
+  }
+
+  .give_text {
+    margin: -9px 0 0 645px;
+  }
+
+  @mixin heart() {
+    margin: 40px 40px 0px 690px;
+    @include mediaWidth(768) {
+      display: none;
+    }
+  }
+
+  .heart {
+    @include heart();
+  }
+
+  .detail {
+    @include detail(40px 0 0 230px);
+  }
+}
+
+// Оформление заказа
+.form__order {
+  width: 370px;
+  height: 315px;
+  background: #FFE2E2;
+  margin: 40px 1170px;
+  position: absolute;
+  @include mediaWidth(768) {
+    display: none;
+  }
+  @mixin button($m,$w,$h) {
+    width: $w;
+    height: $h;
+    background: #FFB0B0;
+    margin: $m;
+  }
+  @mixin button_text {
+    display: block;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 60%;
+    letter-spacing: 0.05em;
+    color: #313131;
+    margin: 25px 139px 26px 119px;
+    position: absolute;
+  }
+
+  .sum__order {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 90%;
+    letter-spacing: 0.2em;
+    color: #313131;
+    margin: 30px 240px 0 30px;
+  }
+
+  .order {
+    color: rgba(49, 49, 49, 0.8);
+    margin: 20px 154px 0 30px;
+    white-space: nowrap;
+  }
+
+  .sum {
+    margin: -13px 30px 244px 286px;
+  }
+
+  input {
+    width: 310px;
+    height: 40px;
+    margin: -165px 30px 110px 30px;
+    position: absolute;
+    text-align: center;
+  }
+
+  input::placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 70%;
+    letter-spacing: 0.1em;
+    color: rgba(49, 49, 49, 0.8);
+    padding: 15px 143px 15px 16px;
+  }
+
+  .mobile__button {
+    @include button(-100px 10px 30px 30px, 320px, 60px);
+  }
+
+  .desktop__text {
+    @include button_text();
+  }
+}
+
+//Второй блок
+
+
+.form_2 {
+  @mixin things($m) {
+    width: 750px;
+    height: 315px;
+    background: #FFE2E2;
+    border: 2px solid #FFB0B0;
+    box-sizing: border-box;
+    margin: $m;
+  }
+  @mixin img() {
+    margin: 30px 0 30px 30px;
+    position: absolute;
+  }
+  @mixin title() {
+    margin: 40px 0 0 230px;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 70%;
+    letter-spacing: 0.05em;
+    color: #313131;
+  }
+  @mixin size($m) {
+    margin: $m;
+  }
+  @mixin detail($m) {
+    text-decoration: none;
+    border-bottom: 2px solid rgba(49, 49, 49, 0.8);;
+    padding-bottom: 3px;
+    line-height: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 70%;
+    letter-spacing: 0.05em;
+    color: rgba(49, 49, 49, 0.8);
+    margin: $m;
+    position: absolute;
+  }
+  @mixin heart($m) {
+    margin: $m;
+    @include mediaWidth(768) {
+      display: none;
+    }
+  }
+
+  .form2 {
+    @include things(100px 0px 0px 370px);
+    margin-bottom: 100px;
+    @include mediaWidth(768) {
+      margin:58px 0 160px 0;
+      width: 768px;
+    }
+  }
+
+  .form_girl {
+    @include img();
+  }
+
+  h6 {
+    @include title();
+  }
+
+  .give_text {
+    margin: -9px 0 0 645px;
+  }
+
+  .size {
+    @include size(20px 20px 0px 230px)
+  }
+
+  .detail {
+    @include detail(-75px 0 0 230px);
+  }
+
+  .heart {
+    @include heart(-80px 10px 10px 690px);
+    position: absolute;
+  }
+
+  .color {
+    margin: 23px 479px 123px 230px;
+  }
+
+  .quality {
+    @include size(66px 10px 20px 230px)
   }
 }

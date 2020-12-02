@@ -39,17 +39,18 @@ $(document).ready(function () {
         }
     );
 
-    /*let deg = 0;
-    function rotate() {
-        deg++;
-        //transform: translate(0px, 0px);
-        $('.top-index__images img').css('transform','translate('+deg+'deg)');
-        if(deg < 105)
-        {
-            setTimeout(function(){rotate();}, 10);
+
+        /*let deg = 0;
+        function rotate() {
+            deg++;
+            //transform: translate(0px, 0px);
+            $('.top-index__images img').css('transform','translate('+deg+'deg)');
+            if(deg < 105)
+            {
+                setTimeout(function(){rotate();}, 10);
+            }
         }
-    }
-    rotate();*/
+        rotate();*/
 
     /*let boxElement = document.querySelectorAll('.top-index__images img');
     let duration = 1200;
