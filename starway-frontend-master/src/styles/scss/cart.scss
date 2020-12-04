@@ -2,105 +2,28 @@ body {
   background: #FCF1F1;
 }
 
-a {
-  text-decoration: none;
-}
-h1 {
-  margin: 168px 0 0 666px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 60px;
-  line-height: 100%;
-  letter-spacing: -0.02em;
-  color: #313131;
-  @include mediaWidth(768) {
-    white-space: nowrap;
-    margin: 100px 143px 0 144px;
-    font-size: 50px;
-  }
-  .mobile__text {
-    display: none;
-    @include mediaWidth(768) {
-      display: block;
-      font-family: Rubik;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 12px;
-      line-height: 90%;
-      letter-spacing: 0.2em;
-      color: #313131;
-      margin: 50px 334px 0 188px;
-    }
-  }
-  .sum {
-    display: none;
-    @include mediaWidth(768) {
-      display: block;
-      font-family: Rubik;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 70%;
-      letter-spacing: 0.05em;
-      color: #313131;
-      margin: 20px 100px 40px 110px;
-    }
-  }
-}
+#starway {
 
-@mixin button($m) {
-  width: 335px;
-  height: 60px;
-  background: #FFB0B0;
-  margin: $m;
-}
-
-@mixin button_text {
-  display: block;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 60%;
-  letter-spacing: 0.05em;
-  color: #313131;
-  margin: 25px 139px 26px 119px;
-  position: absolute;
-}
-
-//768with
-.mobile__button {
-  @include mediaWidth(768) {
-    @include button(40px 0 0 72px);
+  //миксины
+  @mixin button($m) {
+    width: 335px;
+    height: 60px;
+    background: #FFB0B0;
+    margin: $m;
   }
 
-  .mobile__button--text {
-    display: none;
-    @include mediaWidth(768) {
-      display: block;
-      font-family: Rubik;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 60%;
-      letter-spacing: 0.05em;
-      color: #313131;
-      margin: 25px 139px 26px 119px;
-      position: absolute;
-    }
+  @mixin button_text {
+    display: block;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 60%;
+    letter-spacing: 0.05em;
+    color: #313131;
+    margin: 25px 139px 26px 119px;
+    position: absolute;
   }
-
-  .arrow {
-    margin: -12px 10px 10px 83px;
-    @include mediaWidth(768) {
-      margin: -3px 120px 25px 10px;
-      position: absolute;
-    }
-  }
-}
-
-//Первый блок
-.form {
   @mixin things($m) {
     width: 750px;
     height: 315px;
@@ -126,6 +49,12 @@ h1 {
   }
   @mixin size($m) {
     margin: $m;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    color: rgba(49, 49, 49, 0.8);
   }
   @mixin detail($m) {
     text-decoration: none;
@@ -141,82 +70,11 @@ h1 {
     margin: $m;
     position: absolute;
   }
-
-  .form1 {
-    @include things(100px 10px 10px 370px);
-    @include mediaWidth(768) {
-      background: #FCF1F1;
-      margin: 69px 0 0 0;
-      border-right-width: 0;
-      border-left-width: 0;
-      width: 768px;
-    }
-  }
-
-  h6 {
-    @include title();
-  }
-
-  .form1_image {
-    @include img();
-  }
-
-  .size {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 140%;
-      letter-spacing: 0.05em;
-      color: rgba(49, 49, 49, 0.8);
-  }
-
-  .give {
-    margin: 52px 0 175px 230px;
-  }
-
-  .size {
-    @include size(-160px 0 0 230px);
-  }
-
-  .color {
-    margin: 23px 0 0 230px;
-  }
-
-  .give_text {
-    margin: -9px 0 0 645px;
-  }
-
   @mixin heart() {
     margin: 40px 40px 0px 690px;
     @include mediaWidth(768) {
       display: none;
     }
-  }
-
-  .heart {
-    @include heart();
-  }
-
-  .detail {
-    @include detail(40px 0 0 230px);
-  }
-}
-
-// Оформление заказа
-.form__order {
-  width: 370px;
-  height: 315px;
-  background: #FFE2E2;
-  margin: 40px 1170px;
-  position: absolute;
-  @include mediaWidth(768) {
-    display: none;
-  }
-  @mixin button($m,$w,$h) {
-    width: $w;
-    height: $h;
-    background: #FFB0B0;
-    margin: $m;
   }
   @mixin button_text {
     display: block;
@@ -230,59 +88,6 @@ h1 {
     margin: 25px 139px 26px 119px;
     position: absolute;
   }
-
-  .sum__order {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 90%;
-    letter-spacing: 0.2em;
-    color: #313131;
-    margin: 30px 240px 0 30px;
-  }
-
-  .order {
-    color: rgba(49, 49, 49, 0.8);
-    margin: 20px 154px 0 30px;
-    white-space: nowrap;
-  }
-
-  .sum {
-    margin: -13px 30px 244px 286px;
-  }
-
-  input {
-    width: 310px;
-    height: 40px;
-    margin: -165px 30px 110px 30px;
-    position: absolute;
-    text-align: center;
-  }
-
-  input::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 70%;
-    letter-spacing: 0.1em;
-    color: rgba(49, 49, 49, 0.8);
-    padding: 15px 143px 15px 16px;
-  }
-
-  .mobile__button {
-    @include button(-100px 10px 30px 30px, 320px, 60px);
-  }
-
-  .desktop__text {
-    @include button_text();
-  }
-}
-
-//Второй блок
-
-
-.form_2 {
   @mixin things($m) {
     width: 750px;
     height: 315px;
@@ -320,52 +125,438 @@ h1 {
     margin: $m;
     position: absolute;
   }
-  @mixin heart($m) {
+  @mixin circle($m) {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #313131;
+    border-radius: 40px;
     margin: $m;
+  }
+  @mixin circle_in($m) {
+    width: 14px;
+    height: 14px;
+    background: #BC737A;
+    border-radius: 40px;
+    margin: $m;
+  }
+  //конец миксинов
+
+  //Верхние слова
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    margin: 168px 0 0 666px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    color: #313131;
+    @include mediaWidth(768) {
+      white-space: nowrap;
+      margin: 100px 143px 0 144px;
+      font-size: 50px;
+    }
+    @include mediaWidth(375) {
+      font-size: 30px;
+      margin: 50px 43px 40px 43px;
+    }
+
+    .mobile__text {
+      display: none;
+      @include mediaWidth(768) {
+        display: block;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 90%;
+        letter-spacing: 0.2em;
+        color: #313131;
+        margin: 50px 334px 0 188px;
+      }
+      @include mediaWidth(375) {
+        font-size: 12px;
+        margin: 40px 136px 20px 110px;
+      }
+    }
+
+    .sum {
+      display: none;
+      @include mediaWidth(768) {
+        display: block;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 70%;
+        letter-spacing: 0.05em;
+        color: #313131;
+        margin: 20px 100px 40px 110px;
+      }
+      @include mediaWidth(375) {
+        font-size: 14px;
+        margin: 20px 75px 40px 60px;
+      }
+    }
+  }
+
+
+  //768with
+  .mobile__button {
+    @include mediaWidth(768) {
+      @include button(40px 0 0 72px);
+    }
+    @include mediaWidth(375) {
+      @include button(10px 20px 50px 20px);
+      width: 280px;
+    }
+
+    .mobile__button--text {
+      display: none;
+      @include mediaWidth(768) {
+        display: block;
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 60%;
+        letter-spacing: 0.05em;
+        color: #313131;
+        margin: 25px 139px 26px 100px;
+        position: absolute;
+      }
+    }
+
+    .arrow {
+      margin: -12px 10px 10px 83px;
+      @include mediaWidth(768) {
+        margin: -3px 120px 25px 10px;
+        position: absolute;
+      }
+    }
+  }
+
+  //Первый блок
+  .form {
+    .form1 {
+      @include things(100px 10px 10px 370px);
+      @include mediaWidth(768) {
+        background: #FCF1F1;
+        margin: 69px 0 0 0;
+        border-right-width: 0;
+        border-left-width: 0;
+        width: 768px;
+      }
+      @include mediaWidth(375) {
+        width: 375px;
+        height: 243px;
+      }
+    }
+
+    h6 {
+      @include title();
+      @include mediaWidth(375) {
+        font-size: 12px;
+        white-space: nowrap;
+        margin: 50px 81px 27px 151px;
+      }
+    }
+
+    .form1_image {
+      @include img();
+      @include mediaWidth(375) {
+        width: 120px;
+        height: 160px;
+        margin: 20px 235px 63px 20px;
+      }
+    }
+
+    .give_mobile {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 70%;
+      letter-spacing: 0.05em;
+      color: rgba(49, 49, 49, 0.6);
+      display: none;
+      @include mediaWidth(768) {
+        display: block;
+        position: absolute;
+        margin: 20px 160px 23px 150px;
+      }
+    }
+
+    .size {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 140%;
+      letter-spacing: 0.05em;
+      color: rgba(49, 49, 49, 0.8);
+    }
+
+    .give {
+      margin: 52px 0 175px 230px;
+      @include mediaWidth(375) {
+        font-size: 10px;
+        margin: 25px 60px 20px 150px;
+        white-space: nowrap;
+      }
+    }
+
+    .size {
+      @include size(-160px 0 0 230px);
+      @include mediaWidth(375) {
+        font-size: 10px;
+        margin: 20px 10px 10px 150px;
+      }
+    }
+
+    .color {
+      margin: 23px 0 0 230px;
+      @include mediaWidth(375) {
+        font-size: 10px;
+        margin: 20px 10px 10px 150px;
+      }
+    }
+
+    .give_text {
+      margin: -9px 0 0 645px;
+      @include mediaWidth(768) {
+        margin: -9px 0 0 679px;
+      }
+      @include mediaWidth(375) {
+        display: none;
+      }
+    }
+
+    .heart {
+      @include heart();
+    }
+
+    .detail {
+      @include detail(40px 0 0 230px);
+      @include mediaWidth(375) {
+        font-size: 12px;
+        margin: 7px 152px 25px 150px;
+      }
+    }
+
+    .circle {
+      @include circle(-20px 253px 0px 281px);
+      @include mediaWidth(375) {
+        width: 16px;
+        height: 16px;
+        margin: -25px 20px 20px 183px;
+      }
+    }
+
+    .circle_in {
+      @include circle_in(1px 253px 0 1px);
+    }
+  }
+
+  // Оформление заказа
+
+  .form__order {
+    width: 370px;
+    height: 315px;
+    background: #FFE2E2;
+    position: fixed;
+    margin: 40px 0 30px 1170px;
     @include mediaWidth(768) {
       display: none;
     }
-  }
+    @mixin button($m,$w,$h) {
+      width: $w;
+      height: $h;
+      background: #FFB0B0;
+      margin: $m;
+    }
 
-  .form2 {
-    @include things(100px 0px 0px 370px);
-    margin-bottom: 100px;
-    @include mediaWidth(768) {
-      margin:58px 0 160px 0;
-      width: 768px;
+    .sum__order {
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 90%;
+      letter-spacing: 0.2em;
+      color: #313131;
+      margin: 30px 240px 0 30px;
+    }
+
+    .order {
+      color: rgba(49, 49, 49, 0.8);
+      margin: 20px 154px 0 30px;
+      white-space: nowrap;
+    }
+
+    .sum {
+      margin: -13px 30px 244px 286px;
+    }
+
+    input {
+      width: 310px;
+      height: 40px;
+      margin: -165px 30px 110px 30px;
+      position: absolute;
+      text-align: center;
+    }
+
+    input::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 70%;
+      letter-spacing: 0.1em;
+      color: rgba(49, 49, 49, 0.8);
+      padding: 15px 143px 15px 16px;
+    }
+
+    .mobile__button {
+      @include button(-100px 10px 30px 30px, 320px, 60px);
+    }
+
+    .desktop__text {
+      @include button_text();
     }
   }
 
-  .form_girl {
-    @include img();
+  //Второй блок
+
+
+  .form_2 {
+
+    @mixin heart($m) {
+      margin: $m;
+      @include mediaWidth(768) {
+        display: none;
+      }
+    }
+
+    .form2 {
+      @include things(100px 0px 0px 370px);
+      margin-bottom: 100px;
+      @include mediaWidth(768) {
+        margin: 58px 0 160px 0;
+        width: 768px;
+      }
+      @include mediaWidth(375) {
+        display: none;
+      }
+    }
+
+    .form_girl {
+      @include img();
+    }
+
+    h6 {
+      @include title();
+    }
+
+    .give_text {
+      margin: -9px 0 0 661px;
+      @include mediaWidth(768) {
+        margin: -9px 0 0 685px;
+      }
+      @include mediaWidth(375) {
+        display: none;
+      }
+    }
+
+    .size {
+      @include size(20px 20px 0px 230px)
+    }
+
+    .detail {
+      @include detail(30px 0 0 230px);
+    }
+
+    .heart_form_2 {
+      position: absolute;
+      margin: 20px 10px 10px 714px;
+      @include mediaWidth(375) {
+        display: none;
+      }
+    }
+
+    .color {
+      margin: 23px 479px 123px 230px;
+    }
+
+    .quality {
+      @include size(66px 10px 20px 230px);
+    }
+
+    .circle {
+      @include circle(-142px 10px 10px 281px);
+    }
+
+    .circle_in {
+      @include circle_in(1px 9px 11px 1px)
+    }
   }
 
-  h6 {
-    @include title();
-  }
 
-  .give_text {
-    margin: -9px 0 0 645px;
-  }
+  .mobile_form {
+    display: none;
+    @include mediaWidth(375) {
+      display: none;
+      @include things(0);
+      @include mediaWidth(375) {
+        display: block;
+        width: 375px;
+        margin: 70px 0 74px 0;
+      }
+    }
 
-  .size {
-    @include size(20px 20px 0px 230px)
-  }
+    .mobile_img {
+      @include mediaWidth(375) {
+        margin: 40px 235px 24px 20px;
+      }
+    }
 
-  .detail {
-    @include detail(-75px 0 0 230px);
-  }
+    h6 {
+      @include mediaWidth(375) {
+        margin: -190px 20px 20px 150px;
+        font-size: 12px;
+      }
+    }
 
-  .heart {
-    @include heart(-80px 10px 10px 690px);
-    position: absolute;
-  }
+    .size {
+      @include mediaWidth(375) {
+        font-size: 10px;
+        margin: 40px 173px 13px 150px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 140%;
+        letter-spacing: 0.08em;
+        color: #313131;
+        white-space: nowrap;
+      }
+    }
 
-  .color {
-    margin: 23px 479px 123px 230px;
-  }
+    .color {
+      font-size: 10px;
+      margin: 13px 198px 43px 150px;
+    }
 
-  .quality {
-    @include size(66px 10px 20px 230px)
+    .circle {
+      margin: 10px 100px 10px 400px;
+      position: absolute;
+    }
+
+    .circle_in {
+
+    }
+
+    .quality {
+      font-size: 10px;
+      margin: 43px 157px 20px 150px;
+    }
   }
 }

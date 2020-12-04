@@ -25,6 +25,7 @@ block content
     section.form
         div.form1
             img.form1_image(src=require("../images/cart/3.png"))
+            p.give_mobile Подарок
             h6 Шёлковая пижама
                 h6.give_text Подарок
             p.give
@@ -33,8 +34,20 @@ block content
                 | 4000-6000₽
             p.size Размер: s
             p.color Цвет
+                  div.circle
+                     div.circle_in
             a(class='detail' href='#') подробнее
             img.heart(src=require("../images/cart/heart.svg"))
+    section.mobile_form
+        div.form2
+            img.mobile_img(src=require("../images/cart/short.png"))
+            h6 Бамбуковые брюки
+            p.size Размер: s
+            p.color Цвет
+                div.circle
+                    div.circle_in
+            p.quality Количество:   -  1  +
+
     section.form_2
         div.form2
             img.form_girl(src=require("../images/cart/girl.png"))
@@ -43,5 +56,7 @@ block content
             p.quality Количество:   -  1  +
             p.size Размер: s
             p.color Цвет
+                div.circle
+                    div.circle_in
             a(class='detail' href='#') удалить
-            img.heart(src=require("../images/cart/heart.svg"))
+            img.heart_form_2(src=require("../images/cart/heart.svg"))
