@@ -23,6 +23,19 @@ const pages = fs
 module.exports = (env = {}, argv) => {
   const isProduction = argv.mode === 'production';
 
+  const { join, resolve } = require('path');
+  module.exports = () => {
+    return {
+      resolve: {
+        alias: {
+          '@missionlog': resolve(
+              join(__dirname, '..', 'node_modules', 'missionlog')
+          )
+        }
+      }
+    };
+  }
+
   const config = {
     context: path.resolve(__dirname, 'src'),
 
