@@ -3,38 +3,17 @@ body{
     display: flex;
     justify-content: center;
 }
-.form {
-    width: 600px;
-    height: 400px;
-    background: linear-gradient(to bottom,#3BAEE4,#2C5074);
-    margin-top: 100px;
+.display{
+    width: 300px;
 }
-.clean{
+table{
+    background: linear-gradient(to top,#3BAEE4,#ffe2e2);
+    border-spacing: 3px;
+    margin: 200px;
+}
+input[type= button] {
     width: 60px;
-    height: 42px;
-    margin:33px 0 0 50px ;
-    background-color: #ff6388;
-}
-input{
-    width: 440px;
-    height: 30px;
-    margin: 0px 0 0 15px;
-    text-align: center;
-    font-size: 22px;
-}
-.number{
-    margin-top:30px;
-}
-.digit{
-    width: 90px;
-    height: 60px;
-    margin-left: 50px;
-    margin-top: 10px;
-    font-size: 25px;
-}
-button:active, button:focus {
-    outline: none;
-}
-button::-moz-focus-inner {
-    border: 0;
+    height: 40px;
+    background-color: white;
+    margin: 3px;
 }
