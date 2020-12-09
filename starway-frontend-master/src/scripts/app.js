@@ -38,8 +38,6 @@ $(document).ready(function () {
           }
         }
     );
-
-
         /*let deg = 0;
         function rotate() {
             deg++;

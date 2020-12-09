@@ -71,7 +71,7 @@ body {
     position: absolute;
   }
   @mixin heart() {
-    margin: 40px 40px 0px 690px;
+    margin: 20px 40px 0px 690px;
     @include mediaWidth(768) {
       display: none;
     }
@@ -228,6 +228,10 @@ body {
         margin: 25px 139px 26px 119px;
         position: absolute;
       }
+      @include mediaWidth(375){
+          margin: 25px 122px 22px 100px;
+
+      }
     }
 
     .arrow {
@@ -282,7 +286,7 @@ body {
       letter-spacing: 0.05em;
       color: rgba(49, 49, 49, 0.6);
       display: none;
-      @include mediaWidth(768) {
+      @include mediaWidth(375) {
         display: block;
         position: absolute;
         margin: 20px 160px 23px 150px;
@@ -300,6 +304,7 @@ body {
 
     .give {
       margin: 52px 0 175px 230px;
+      line-height: 140%;
       @include mediaWidth(375) {
         font-size: 10px;
         margin: 25px 60px 20px 150px;
@@ -338,10 +343,13 @@ body {
     }
 
     .detail {
-      @include detail(40px 0 0 230px);
+      @include detail(25px 0 0 230px);
       @include mediaWidth(375) {
         font-size: 12px;
-        margin: 7px 152px 25px 150px;
+        margin: -1px 152px 25px 150px;
+        line-height: 140%;
+        color: #000000;
+        text-transform: capitalize;
       }
     }
 
@@ -443,6 +451,7 @@ body {
       @include mediaWidth(768) {
         margin: 58px 0 160px 0;
         width: 768px;
+        border-left-width: 0;
       }
       @include mediaWidth(375) {
         display: none;
@@ -476,10 +485,9 @@ body {
     }
 
     .heart_form_2 {
-      position: absolute;
-      margin: 20px 10px 10px 714px;
-      @include mediaWidth(375) {
-        display: none;
+      margin: 30px 40px 40px 690px;
+      @include mediaWidth(768) {
+        margin: 24px 34px 56px 714px;
       }
     }
 
@@ -489,6 +497,7 @@ body {
 
     .quality {
       @include size(66px 10px 20px 230px);
+      word-spacing: 16px;
     }
 
     .circle {
@@ -509,19 +518,24 @@ body {
       @include mediaWidth(375) {
         display: block;
         width: 375px;
+        height: 204px;
         margin: 70px 0 74px 0;
+        border-right-width: 0;
+        border-left-width: 0;
       }
     }
 
     .mobile_img {
+      width: 120px;
+      height: 160px;
       @include mediaWidth(375) {
-        margin: 40px 235px 24px 20px;
+        margin: 20px 235px 24px 20px;
       }
     }
 
     h6 {
       @include mediaWidth(375) {
-        margin: -190px 20px 20px 150px;
+        margin: -188px 20px 20px 150px;
         font-size: 12px;
       }
     }
@@ -546,17 +560,42 @@ body {
     }
 
     .circle {
-      margin: 10px 100px 10px 400px;
+      @include circle(-60px 100px 10px 180px);
       position: absolute;
     }
-
     .circle_in {
-
+      @include circle_in(1px 10px 10px 1px);
     }
 
     .quality {
       font-size: 10px;
-      margin: 43px 157px 20px 150px;
+      margin: -10px 157px 20px 150px;
+      font-family: Rubik;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 10px;
+      line-height: 140%;
+      letter-spacing: 0.08em;
+      color: #313131;
+    }
+    .give_text{
+      margin: -20px 20px 20px 306px;
+    }
+    .quality{
+      word-spacing: 16px;
+    }
+  }
+  .button_js {
+    display: none;
+    @include mediaWidth(375) {
+      display: block;
+      width: 100%;
+      height: 60px;
+      background: #FFB0B0;
+      position: fixed;
+      z-index: 99999;
+      bottom: 0;
+      left: 0;
     }
   }
 }
